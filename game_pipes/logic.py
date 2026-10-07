@@ -11,7 +11,8 @@ LEFT = 8    # 1000
 '''
 Vd: Ống chữ I có dạng: 1010, 0101
     Ống chữ L: 1100, 0110, 0011, 1001
-    Bình (chỉ 1 cổng): 1000, 0100, 0010, 0001
+    Bình chứa (chỉ 1 cổng vào): 1000, 0100, 0010, 0001
+    Ô trống: 0000
     ...
 '''
 
@@ -71,13 +72,13 @@ class PipeState:
 
     def get_neighbor(self, r, c, direction):
         """
-        Lấy tọa độ ô lân cận của ô (r,c) theo hướng direction.
+        Lấy tọa độ các ô lân cận của ô (r,c) theo hướng direction.
         Nếu wrap=True: cuốn biên theo modulo.
         Nếu wrap=False: trả về None nếu ra khỏi biên.
         """
         dr, dc = DIR_OFFSETS[direction]
         neighbor_r, neighbor_c = r + dr, c + dc
-        if self.wrap:
+        if self.wrap: #Nếu chế độ wrap
             return (neighbor_r % self.rows, neighbor_c % self.cols)
         else:
             if 0 <= neighbor_r < self.rows and 0 <= neighbor_c < self.cols:
@@ -96,7 +97,7 @@ class PipeState:
             neighbor_cell = self.get_neighbor(r, c, d)
 
             if neighbor_cell is None: # Chế độ wrap -> Neighbor ko bao h None
-                # Chế độ non-wrap và chĩa ra ngoài biên
+                # Chế độ non-wrap và chĩa ra ngoài biên chứ ko phải neighbor
                 if has_port:
                     return False 
             else:
@@ -132,7 +133,7 @@ class PipeState:
 
     def is_goal(self) -> bool:
         """
-        Kiểm tra trạng thái đích:
+        Kiểm tra trạng thái đích -> Toàn bộ ống phải tạo thành 1 Tree
         1. BFS duyệt toàn bộ các ống để kiểm tra tất cả các ống đều khớp với ống bên cạnh
          và tạo thành 1 thành phần liên thông duy nhất.
         2. Đường ống ko tạo chu trình (Check: E = V - 1).
@@ -148,6 +149,7 @@ class PipeState:
         visited.add(self.start_pipe) # Chứa tọa độ (r,c) các pipe đã đi qua
         total_connections = 0
 
+        # Kiểm tra liên thông + Không hở
         while queue:
             curr_r, curr_c = queue.popleft()
             cur_pipe_mask = self.grid[curr_r][curr_c]
@@ -171,14 +173,15 @@ class PipeState:
         if len(visited) != self.total_pipes:
             return False
 
-        # E != V - 1 để đồ thị ko có chu trình
+        # E != V - 1 -> đồ thị có chu trình -> Loại
         if (total_connections // 2) != (self.total_pipes - 1):
             return False
 
         return True
 
+    # Utils
     def clone(self) -> "PipeState":
-        """Tạo bản sao sâu của trạng thái."""
+        """Tạo deep copy của trạng thái."""
         new_grid = [row[:] for row in self.grid]
         return PipeState(new_grid, self.wrap)
 
