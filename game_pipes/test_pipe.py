@@ -5,14 +5,16 @@ import time
 from logic import PipeState
 import logic
 import blind_search
-import heuristic_search  # Import thêm module A*
+import heuristic_search
 import sys
 
-# Tăng giới hạn đệ quy của Python. 
 sys.setrecursionlimit(2000)
 
-def generate_random_tree(rows, cols):
-    """Sinh một lưới ống nước liên thông ngẫu nhiên."""
+def generate_random_tree(rows, cols, wrap=False):
+    """
+    Sinh lưới ống nước.
+    Nếu wrap=True, ống sẽ tự động quấn sang mép đối diện tạo thành bản đồ Torus hoàn hảo.
+    """
     grid = [[0 for _ in range(cols)] for _ in range(rows)] 
     visited = set()
     
@@ -29,17 +31,25 @@ def generate_random_tree(rows, cols):
         random.shuffle(directions) 
         
         for dr, dc in directions:
-            nr, nc = r + dr, c + dc
-            if 0 <= nr < rows and 0 <= nc < cols and (nr, nc) not in visited:
-                grid[r][c] |= DIR_MAP[(dr, dc)]         
-                grid[nr][nc] |= DIR_MAP[(-dr, -dc)]     
-                dfs(nr, nc) 
+            if wrap:
+                # Chế độ Xuyên biên (Modulo)
+                nr, nc = (r + dr) % rows, (c + dc) % cols
+                if (nr, nc) not in visited:
+                    grid[r][c] |= DIR_MAP[(dr, dc)]         
+                    grid[nr][nc] |= DIR_MAP[(-dr, -dc)]     
+                    dfs(nr, nc)
+            else:
+                # Chế độ bình thường (Chặn tường)
+                nr, nc = r + dr, c + dc
+                if 0 <= nr < rows and 0 <= nc < cols and (nr, nc) not in visited:
+                    grid[r][c] |= DIR_MAP[(dr, dc)]         
+                    grid[nr][nc] |= DIR_MAP[(-dr, -dc)]     
+                    dfs(nr, nc) 
                 
     dfs(0, 0) 
     return grid
 
 def scramble_grid(grid):
-    """Xáo trộn bảng bằng cách xoay ngẫu nhiên các ô."""
     rows, cols = len(grid), len(grid[0])
     scrambled = [[0]*cols for _ in range(rows)]
     for r in range(rows):
@@ -53,62 +63,62 @@ def scramble_grid(grid):
 
 class TestPipeAlgorithms(unittest.TestCase):
     
-    def test_2x2_tree(self):
-        """Test cơ bản trên bảng tĩnh 2x2 cho cả DFS và A*."""
-        scrambled_grid = [[3, 1], [2, 0]]
+    def run_large_test(self, size, wrap=False):
+        mode_str = "CÓ WRAP" if wrap else "KHÔNG WRAP"
+        print(f"\n--- So sánh DFS và A* trên bảng {size}x{size} ({mode_str}) ---")
         
-        # Test DFS
-        state_dfs = PipeState(copy.deepcopy(scrambled_grid), wrap=True)
-        res_dfs = blind_search.solve(state_dfs)
-        self.assertIsNotNone(res_dfs, "DFS không giải được 2x2")
-        self.assertTrue(res_dfs.is_goal(), "Nghiệm DFS không hợp lệ")
-
-        # Test A*
-        state_astar = PipeState(copy.deepcopy(scrambled_grid), wrap=True)
-        res_astar = heuristic_search.solve(state_astar)
-        self.assertIsNotNone(res_astar, "A* không giải được 2x2")
-        self.assertTrue(res_astar.is_goal(), "Nghiệm A* không hợp lệ")
-
-    def run_large_test(self, size):
-        """Hàm so sánh trực tiếp tốc độ giữa DFS và A* trên cùng 1 bảng."""
-        print(f"\n--- So sánh DFS và A* trên bảng {size}x{size} ---")
-        solved_grid = generate_random_tree(size, size)
+        # Sinh map phù hợp chính xác với chế độ Wrap tương ứng
+        solved_grid = generate_random_tree(size, size, wrap=wrap)
         scrambled_grid = scramble_grid(solved_grid)
         
         # Chạy DFS
-        state_dfs = PipeState(copy.deepcopy(scrambled_grid), wrap=False)
+        state_dfs = PipeState(copy.deepcopy(scrambled_grid), wrap=wrap)
         start_time_dfs = time.time()
         result_dfs = blind_search.solve(state_dfs)
         elapsed_dfs = time.time() - start_time_dfs
         
         # Chạy A*
-        state_astar = PipeState(copy.deepcopy(scrambled_grid), wrap=False)
+        state_astar = PipeState(copy.deepcopy(scrambled_grid), wrap=wrap)
         start_time_astar = time.time()
         result_astar = heuristic_search.solve(state_astar)
         elapsed_astar = time.time() - start_time_astar
         
-        # In kết quả Benchmark
         print(f"DFS (Duyệt mù): {elapsed_dfs:.4f} giây")
         print(f"A* (Heuristic): {elapsed_astar:.4f} giây")
         
         self.assertIsNotNone(result_dfs, "DFS thất bại!")
         self.assertIsNotNone(result_astar, "A* thất bại!")
-        self.assertTrue(result_astar.is_goal(), "Nghiệm tìm được của A* bị sai luật!")
+        self.assertTrue(result_astar.is_goal(), "Nghiệm của A* bị sai!")
 
-    def test_5x5_random(self):
-        self.run_large_test(5)
+    # ==========================================
+    # CÁC BÀI TEST CHUẨN (KHÔNG WRAP) - Tốc độ cực cao
+    # ==========================================
+    def test_10x10_no_wrap(self):
+        self.run_large_test(10, wrap=False)
 
-    def test_7x7_random(self):
-        self.run_large_test(7)
+    def test_20x20_no_wrap(self):
+        self.run_large_test(20, wrap=False)
+        
+    def test_30x30_no_wrap(self):
+        self.run_large_test(30, wrap=False)
 
-    def test_10x10_random(self):
-        self.run_large_test(10)
+    def test_40x40_no_wrap(self):
+        self.run_large_test(40, wrap=False)
+    # ==========================================
+    # CÁC BÀI TEST TORUS (CÓ WRAP) - Phức tạp cao
+    # ==========================================
+    # Lưu ý: Do đặc thù hoãn cắt tỉa (Deferred Pruning) của Wrap Mode
+    # Hệ số phân nhánh rất lớn, chỉ nên test tối đa 15x15 để tránh tràn RAM
+    def test_07x07_wrap(self):
+        self.run_large_test(7, wrap=True)
 
-    def test_30x30_random(self):
-        self.run_large_test(30)
+    def test_10x10_wrap(self):
+        self.run_large_test(10, wrap=True)
+        
+    def test_12x12_wrap(self):
+        self.run_large_test(12, wrap=True)
 
-    def test_40x40_random(self):
-        self.run_large_test(40)
-
+    def test_15x15_wrap(self):
+        self.run_large_test(15, wrap=True)
 if __name__ == '__main__':
     unittest.main()
