@@ -47,5 +47,40 @@ Nó sử dụng duy nhất một thuật toán **BFS Flood-Fill**, thực hiện
 2. **Đếm liên thông:** Nếu BFS kết thúc suôn sẻ, nó so sánh số ô duyệt được (`len(visited)`) với `total_pipes`. Nếu bằng nhau, toàn bộ mạng lưới là một khối duy nhất.
 3. **Kiểm tra Chu trình:** Mạng lưới phải là một đồ thị Cây phi chu trình (Acyclic Tree), được xác thực bằng công thức số cạnh $E = V - 1$.
 
-### E. Hàm đánh giá Heuristic (`count_open_ports`)
-Đếm tổng số "đầu cắm hở" (chĩa vào tường hoặc chĩa vào khoảng không) trên toàn bộ bản đồ. Giá trị này được thuật toán **A*** sử dụng để ước lượng số bước tối thiểu còn lại cần để giải quyết (Heuristic).
+---
+
+## 3. Giải thuật Heuristic & A* Search (heuristic_search.py)
+
+Giải thuật **A* Search** được cài đặt để thay thế cho Duyệt mù (DFS/BFS), giúp AI ưu tiên mở rộng các nhánh an toàn và tránh các ngõ cụt (Dead-end) sớm hơn. Dưới đây là kiến trúc các Lớp và Hàm chi tiết:
+
+### A. Lớp Hạt nhân `SearchNode`
+Đóng vai trò là một Node trên cây tìm kiếm A*, dùng để lưu trữ trạng thái tại mỗi bước và giao tiếp với Hàng đợi ưu tiên.
+* **Các thuộc tính chính (`__init__`):**
+  - `state`: Trạng thái bàn cờ hiện tại (Kế thừa từ `PipeState`).
+  - `index`: Vị trí ô đang xét (Độ sâu của cây, từ $0$ đến $N-1$).
+  - `fixed_cells`: Tập hợp (Set) các tọa độ đã được chốt góc xoay thành công.
+  - `g`: Chi phí đường đi từ trạng thái đầu tiên (bằng chính `index`).
+  - `h`: Chi phí ước lượng đến đích (Lấy từ hàm Heuristic).
+  - `f`: Chi phí tổng $f(n) = g(n) + h(n)$.
+* **Hàm so sánh (`__lt__`):** Ghi đè toán tử "Less Than" (`<`). Hàm giúp cấu trúc Min-Heap của Python (`heapq`) biết cách sắp xếp Node. Node nào có `f` nhỏ hơn sẽ được ưu tiên. Nếu `f` bằng nhau, Node có `h` nhỏ hơn sẽ được ưu tiên duyệt trước.
+
+### B. Hàm `calculate_heuristic(state, fixed_cells)`
+Đây là linh hồn của thuật toán A* trong bài toán này. Hàm áp dụng phương pháp **Đếm Rò rỉ Ranh giới (Boundary Open Ports / Leaks)**.
+* **Mục tiêu:** Đếm xem các ô ĐÃ CHỐT đang chĩa bao nhiêu cổng hở vào vùng CHƯA CHỐT (màn sương mù). Càng nhiều cổng hở $\rightarrow$ Gánh nặng ở các bước tương lai càng lớn $\rightarrow$ Tính rủi ro càng cao.
+* **Logic triển khai:**
+  1. Chỉ duyệt vòng lặp qua các ô nằm trong tập `fixed_cells`.
+  2. Tại mỗi ô, dùng bitmask để phân tích 4 hướng.
+  3. Nếu hướng đó có chĩa ống, dùng `get_neighbor` lấy tọa độ láng giềng.
+  4. Nếu tọa độ láng giềng **không nằm trong `fixed_cells`** (tức là đâm vào vùng chưa chốt), biến `open_ports` được tăng thêm 1.
+  5. Trả về `open_ports` làm chi phí $h(n)$.
+
+### C. Hàm `solve_astar(initial_state)`
+Hàm luồng thực thi chính (Main loop) của giải thuật A* Search.
+* **Bước 1 (Khởi tạo):** Tạo `SearchNode` gốc (Root) với $g=0$ và đưa vào Hàng đợi ưu tiên (Priority Queue) sử dụng module `heapq`.
+* **Bước 2 (Vòng lặp khám phá):** Liên tục `heappop` để rút Node có giá trị $f(n)$ nhỏ nhất ra khỏi hàng đợi.
+* **Bước 3 (Goal Test):** Nếu Node hiện tại đã chốt xong toàn bộ bảng (`index == total_cells`), gọi hàm `is_goal()` để kiểm tra chéo (Verify). Nếu đúng luật, trả về nghiệm.
+* **Bước 4 (Sinh nhánh con - Expand):** 
+  - Lấy tất cả các góc xoay duy nhất của ô hiện tại.
+  - Clone trạng thái và áp dụng góc xoay.
+  - Gọi động cơ cắt tỉa `is_valid_cell_placement` (từ `logic.py`).
+  - Nếu góc xoay HỢP LỆ $\rightarrow$ Tính $g_{new} = g + 1$ và $h_{new}$ (bằng hàm `calculate_heuristic`). Tạo `SearchNode` con và `heappush` trở lại vào Hàng đợi ưu tiên. Bỏ qua nếu mâu thuẫn.

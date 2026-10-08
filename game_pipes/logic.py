@@ -180,10 +180,13 @@ class PipeState:
         return True
 
     # Utils
-    def clone(self) -> "PipeState":
-        """Tạo deep copy của trạng thái."""
+    def clone(self):
+        """DeepCopy PipeState hiện tại"""
         new_grid = [row[:] for row in self.grid]
-        return PipeState(new_grid, self.wrap)
+        new_state = PipeState(new_grid, self.wrap)
+        new_state.total_pipes = self.total_pipes
+        new_state.start_pipe = self.start_pipe
+        return new_state
 
     def to_tuple(self) -> Tuple[Tuple[int, ...], ...]:
         """Chuyển thành tuple để dùng làm key trong tập set (đã duyệt)."""
