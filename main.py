@@ -27,8 +27,21 @@ if __name__ == "__main__":
 
 from game_minesweeper.logic import TentsAndTreeState
 from game_minesweeper.blind_search import dfs_search
+from game_minesweeper.heuristic_search import A_star_search
+from time import perf_counter_ns
 
 cases = [
+    {
+        "name": "case0_test_don_gian",
+        "grid": [
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0],
+        ],
+        "row_limits": [1, 0, 0],
+        "col_limits": [0, 1, 0],
+        "trees": [(0, 0)],
+    },
     {
         "name": "case1_co_loi_giai_1_tree",
         "grid": [
@@ -65,12 +78,37 @@ cases = [
     },
 ]
 
-for c in cases:
-    state = TentsAndTreeState(c["grid"], c["row_limits"], c["col_limits"], c["trees"])
-    result = dfs_search(state)
-    print("=== ", c["name"], "===")
-    print("Kết quả:", result)
-    if result:
-        for row in state.grid:
-            print(row)
-    print()
+def make_state(case):
+    grid = [row[:] for row in case["grid"]]
+    return TentsAndTreeState(grid, case["row_limits"], case["col_limits"], case["trees"])
+
+
+def main():
+    for case in cases:
+        print(f"=== {case['name']} ===")
+
+        dfs_state = make_state(case)
+        start = perf_counter_ns()
+        dfs_result = dfs_search(dfs_state)
+        dfs_time = (perf_counter_ns() - start) / 1_000_000
+        print(f"DFS: {dfs_result}, thời gian: {dfs_time:.6f} ms")
+
+        astar_state = make_state(case)
+        start = perf_counter_ns()
+        astar_solution, expanded = A_star_search(astar_state)
+        astar_time = (perf_counter_ns() - start) / 1_000_000
+        print(f"A*: {astar_solution is not None}, thời gian: {astar_time:.6f} ms, nút mở rộng: {expanded}")
+
+        if dfs_result:
+            print("Lời giải DFS:")
+            for row in dfs_state.grid:
+                print(row)
+        if astar_solution is not None:
+            print("Lời giải A*:")
+            for row in astar_solution.grid:
+                print(row)
+        print()
+
+
+if __name__ == "__main__":
+    main()
