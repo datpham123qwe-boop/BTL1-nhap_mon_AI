@@ -37,17 +37,17 @@ class AkariProblem:
         self.ray_len: List[int] = [0] * self.num_white
         self.max_ray_len = 1 # -> heuristic
 
-        for (r,c) in self.white_coords:
-            u = self.coord_to_id[(r,c)]
+        for u, (r, c) in enumerate(self.white_coords):
             mask = 1 << u
             for (dr, dc) in DIRS: # Quét 4 hướng xem chiếu tới đâu
                 while (0 <= r < self.rows and 0 <= c < self.cols) and self.grid[r][c] == WHITE:
                     v = self.coord_to_id[(r, c)]
                     mask |= (1 << v) # Các ô trắng có thể chiếu tới
-                    r,c = r + dr, c + dc
+                    nr, nc = r + dr, c + dc
             self.ray_mask[u] = mask
-            self.ray_len[u] = self.ray_mask[u].bit_count()
-            self.max_ray_len = max(self.max_ray_len, mask.bit_count())
+            count = mask.bit_count()
+            self.ray_len[u] = count
+            self.max_ray_len = max(self.max_ray_len,count)
 
         self.clues: List[Tuple[int, int, int]] = []          # Lưu (r, c, số_đèn_yêu_cầu)
         self.clue_adj_mask: List[int] = []                   # Bitmask các ô trắng kề tường c_idx
@@ -56,7 +56,7 @@ class AkariProblem:
 
         for r in range(self.rows):
             for c in range(self.cols):
-                if grid[r][c] in range(5): # Quét tìm ô Đen
+                if 0 <= grid[r][c] <= 4: # Quét tìm ô Đen
                     c_idx = len(self.clues) # index ô đen
                     self.clues.append((r,c,grid[r][c]))
                     adj_mask = 0 # mask các ô trắng kề
