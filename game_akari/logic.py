@@ -42,9 +42,9 @@ class AkariProblem:
             for (dr, dc) in DIRS: # Quét 4 hướng xem chiếu tới đâu
                 nr, nc = r + dr, c + dc
                 while (0 <= nr < self.rows and 0 <= nc < self.cols) and self.grid[nr][nc] == WHITE:
-                    v = self.coord_to_id[(r, c)]
+                    v = self.coord_to_id[(nr, nc)]
                     mask |= (1 << v) # Các ô trắng có thể chiếu tới
-                    nr, nc = r + dr, c + dc
+                    nr, nc = nr + dr, nc + dc
             self.ray_mask[u] = mask
             count = mask.bit_count()
             self.ray_len[u] = count
