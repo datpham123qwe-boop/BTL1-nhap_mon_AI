@@ -41,7 +41,7 @@ class AkariProblem:
             mask = 1 << u
             for (dr, dc) in DIRS: # Quét 4 hướng xem chiếu tới đâu
                 nr, nc = r + dr, c + dc
-                while (0 <= nr < self.rows and 0 <= nc < self.cols) and self.grid[r][c] == WHITE:
+                while (0 <= nr < self.rows and 0 <= nc < self.cols) and self.grid[nr][nc] == WHITE:
                     v = self.coord_to_id[(r, c)]
                     mask |= (1 << v) # Các ô trắng có thể chiếu tới
                     nr, nc = r + dr, c + dc
@@ -107,3 +107,31 @@ class AkariProblem:
                 return False
 
         return True
+    def render(self, bulbs_mask: int = 0) -> str:
+            """Hàm vẽ trực quan bàn cờ Akari ra Console."""
+            lit_mask = 0
+            for u in range(self.num_white):
+                if (bulbs_mask >> u) & 1:
+                    lit_mask |= self.ray_mask[u]
+
+            lines = [f"┌{'───' * self.cols}┐"]
+            for r in range(self.rows):
+                row_str = "│"
+                for c in range(self.cols):
+                    val = self.grid[r][c]
+                    if val == WALL:
+                        row_str += " ██"
+                    elif 0 <= val <= 4:
+                        row_str += f" {val} "
+                    else:
+                        u = self.coord_to_id[(r, c)]
+                        if (bulbs_mask >> u) & 1:
+                            row_str += " 💡"
+                        elif (lit_mask >> u) & 1:
+                            row_str += " · "
+                        else:
+                            row_str += "   "
+                row_str += "│"
+                lines.append(row_str)
+            lines.append(f"└{'───' * self.cols}┘")
+            return "\n".join(lines)
