@@ -40,7 +40,8 @@ class AkariProblem:
         for u, (r, c) in enumerate(self.white_coords):
             mask = 1 << u
             for (dr, dc) in DIRS: # Quét 4 hướng xem chiếu tới đâu
-                while (0 <= r < self.rows and 0 <= c < self.cols) and self.grid[r][c] == WHITE:
+                nr, nc = r + dr, c + dc
+                while (0 <= nr < self.rows and 0 <= nc < self.cols) and self.grid[r][c] == WHITE:
                     v = self.coord_to_id[(r, c)]
                     mask |= (1 << v) # Các ô trắng có thể chiếu tới
                     nr, nc = r + dr, c + dc
