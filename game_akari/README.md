@@ -1,6 +1,6 @@
 # Bài toán Akari (Light Up) — Giải thuật Tìm kiếm AI
 
-Tài liệu này mô tả chi tiết kiến trúc mã nguồn, danh sách các thuộc tính, phương thức và logic thuật toán cho bài toán **Akari (Light Up)** (thuộc hệ sinh thái Logic Puzzles trên `puzzle-pipes.com`) sử dụng ngôn ngữ **Python 3**[cite: 6]. Hệ thống bao gồm mô hình hóa không gian trạng thái bằng Bitmask, giải thuật Tìm kiếm mù (**DFS Backtracking**), giải thuật Tìm kiếm Heuristic (**A* kết hợp MRV & Constraint Propagation**) và bộ công cụ đo lường thời gian/bộ nhớ tự động[cite: 6].
+Tài liệu này mô tả chi tiết kiến trúc mã nguồn, danh sách các thuộc tính, phương thức và logic thuật toán cho bài toán **Akari (Light Up)** (thuộc hệ sinh thái Logic Puzzles trên `puzzle-pipes.com`) sử dụng ngôn ngữ **Python 3**. Hệ thống bao gồm mô hình hóa không gian trạng thái bằng Bitmask, giải thuật Tìm kiếm mù (**DFS Backtracking**), giải thuật Tìm kiếm Heuristic (**Constructive A* kết hợp MRV**) và bộ công cụ đo lường thời gian/bộ nhớ tự động.
 
 ---
 
@@ -10,8 +10,8 @@ Tài liệu này mô tả chi tiết kiến trúc mã nguồn, danh sách các t
 game_akari/
 ├── logic.py             # Định nghĩa lớp AkariProblem, tiền xử lý Bitmask và kiểm tra Goal
 ├── blind_search.py      # Giải thuật Tìm kiếm mù theo chiều sâu (DFS Backtracking)
-├── heuristic_search.py  # Giải thuật Tìm kiếm Heuristic (A* + MRV + Lan truyền ràng buộc)
-├── test_akari.py        # Bộ sinh bản đồ có nghiệm và Benchmark đo Thời gian & Bộ nhớ (Mẫu)
+├── heuristic_search.py  # Giải thuật Tìm kiếm Heuristic (Constructive A* + MRV)
+├── test_akari.py        # Bộ sinh bản đồ có nghiệm và Benchmark đo Thời gian & Bộ nhớ
 └── README.md            # Tài liệu đặc tả kiến trúc, thuộc tính và phương thức
 ```
 
@@ -60,13 +60,13 @@ Module này chịu trách nhiệm chuyển đổi lưới bản đồ 2D sang h�
     2. **Phủ sáng 100%:** Hợp (`|`) tất cả `ray_mask[u]` của các đèn đã đặt phải bằng `self.all_white_mask`.
     3. **Đủ số lượng quanh tường:** Với mọi tường `c_idx`, số bit `1` của phép giao `(bulbs_mask & self.clue_adj_mask[c_idx]).bit_count()` phải bằng đúng `required`.
 * **`render(self, bulbs_mask: int = 0) -> str`**
-  * Trực quan hóa trạng thái bàn cờ ra Console bằng ký tự Unicode (`██` cho tường đen, `0..4` cho tường có số, `💡` cho bóng đèn, và `·` cho tia sáng) phục vụ tính năng hiển thị trực quan[cite: 6].
+  * Trực quan hóa trạng thái bàn cờ ra Console bằng ký tự Unicode (`██` cho tường đen, `0..4` cho tường có số, `💡` cho bóng đèn, và `·` cho tia sáng) phục vụ tính năng hiển thị trực quan.
 
 ---
 
 ## 3. Module `blind_search.py` — Giải thuật Tìm kiếm mù (DFS)
 
-Module này hiện thực giải thuật **Tìm kiếm theo chiều sâu (Depth-First Search - DFS Backtracking)** sử dụng cấu trúc ngăn xếp LIFO (`stack`)[cite: 6].
+Module này hiện thực giải thuật **Tìm kiếm theo chiều sâu (Depth-First Search - DFS Backtracking)** sử dụng cấu trúc ngăn xếp LIFO (`stack`).
 
 ### 3.1. Cấu trúc Trạng thái trong Stack
 Mỗi phần tử trong `stack` là một tuple 4 thành phần:
@@ -96,61 +96,48 @@ Mỗi phần tử trong `stack` là một tuple 4 thành phần:
 
 ---
 
-## 4. Module `heuristic_search.py` — Giải thuật Tìm kiếm Heuristic (A*)
+## 4. Module `heuristic_search.py` — Giải thuật Tìm kiếm Heuristic (Constructive A*)
 
-Module này hiện thực giải thuật tìm kiếm có thông tin **A* (Best-First Search)** trên hàng đợi ưu tiên (`heapq`), kết hợp cơ chế **Lan truyền ràng buộc cục bộ (`fast_propagate`)** và chiến lược chọn biến động **MRV (`pick_next_decision`)**[cite: 6].
+Module này hiện thực giải thuật **Tìm kiếm A* Kiến tạo (Constructive A* Search)** trên hàng đợi ưu tiên (`heapq`), kết hợp chiến lược chọn mục tiêu bó hẹp nhất **MRV (Minimum Remaining Values)** và tập đóng `visited` chống duyệt trùng trạng thái.
 
-### 4.1. Lớp `AStarNode`
-
-Sử dụng `__slots__` để tối ưu hóa cấp phát bộ nhớ cho từng node trong hàng đợi ưu tiên `open_set`.
-
-#### Bảng Thuộc tính (Attributes)
-
-| Tên thuộc tính | Kiểu dữ liệu | Mô tả chi tiết |
-| :--- | :--- | :--- |
-| `bulbs_mask` | `int` | Bitmask các ô trắng đã đặt bóng đèn. |
-| `lit_mask` | `int` | Bitmask các ô trắng đã được chiếu sáng. |
-| `forbidden_mask` | `int` | Bitmask các ô trắng **bị cấm đặt đèn** (do đã bị chiếu sáng, do nằm kề tường đã đủ đèn, hoặc do nhánh quyết định không đặt đèn). |
-| `rem_clues` | `Tuple[int, ...]` | Số lượng bóng đèn còn thiếu quanh mỗi bức tường có số. |
-| `f_score` | `float` | Điểm đánh giá Heuristic tổng hợp dùng để sắp xếp trong Min-Heap (`heapq`). |
-| `unlit_cnt` | `int` | Số lượng ô trắng hiện chưa được chiếu sáng. |
-
-#### Phương thức của `AStarNode`
-* **`__lt__(self, other: "AStarNode") -> bool`:** Định nghĩa toán tử `<` cho `heapq`, ưu tiên mở rộng node có `f_score` nhỏ hơn (nếu bằng nhau thì ưu tiên `unlit_cnt` nhỏ hơn).
+### 4.1. Cấu trúc Trạng thái trong Priority Queue (`open_set`) & Tập đóng (`visited`)
+* Mỗi phần tử trong hàng đợi ưu tiên `open_set` là một tuple 5 thành phần được sắp xếp tự động theo `f_score` tăng dần (và `unlit_cnt` tăng dần nếu `f_score` bằng nhau):
+  ```python
+  (f_score: float, unlit_cnt: int, bulbs_mask: int, lit_mask: int, rem_clues: Tuple[int, ...])
+  ```
+* Tập đóng `visited: Set[int]` lưu trực tiếp số nguyên `bulbs_mask` của các cấu hình đèn đã sinh ra, giúp loại bỏ hoàn toàn các nhánh hoán vị trùng lặp (ví dụ: đặt đèn `u` rồi `v` cho ra cùng một trạng thái với đặt đèn `v` rồi `u`).
 
 ### 4.2. Các Hàm & Logic Giải thuật trong `heuristic_search.py`
 
-* **`fast_propagate(problem, bulbs_mask, lit_mask, forbidden_mask, rem_clues)`**
-  * Thực hiện vòng lặp suy diễn tất định trên các bức tường có số cho đến khi đạt trạng thái cân bằng:
-    1. Tính mặt nạ các ô trắng kề tường `c_idx` còn có thể đặt đèn: `avail_mask = clue_adj_mask[c_idx] & ~forbidden_mask` và `avail_cnt = avail_mask.bit_count()`.
-    2. **Phát hiện nhánh cụt:** Nếu `need < 0` hoặc `avail_cnt < need` (không còn đủ ô hợp lệ để đặt đủ đèn cho tường), trả về `None` để cắt bỏ nhánh ngay lập tức.
-    3. **Quy tắc Tường bão hòa (`need == 0`):** Khóa toàn bộ các ô kề còn lại bằng lệnh `forbidden_mask |= avail_mask`.
-    4. **Quy tắc Tường bắt buộc (`avail_cnt == need`):** Bắt buộc đặt bóng đèn vào tất cả các ô trong `avail_mask`, cập nhật `bulbs_mask`, phóng tia sáng vào `lit_mask` cùng `forbidden_mask`, và trừ `rem_clues` của các tường liên đới.
-* **`pick_next_decision(problem, lit_mask, forbidden_mask, rem_clues) -> Tuple[int, int]`**
-  * Thay vì chọn ô tuần tự như DFS, hàm áp dụng chiến lược **Minimum Remaining Values (MRV)** và trả về `(branch_u, status)`:
-    1. **Ưu tiên 1 (Ràng buộc tường):** Nếu còn bức tường `c_idx` có `rem_clues[c_idx] > 0`, chọn ngay một ô trắng hợp lệ kề tường đó và trả về `(u, 2)` (cần phân nhánh).
-    2. **Ưu tiên 2 (Ô tối bó hẹp nhất & Đơn trị):** Duyệt qua các ô trắng chưa sáng (`unlit_mask = all_white_mask ^ lit_mask`). Với mỗi ô tối `u`, tập các vị trí có thể đặt đèn để chiếu sáng `u` là `options = ray_mask[u] & ~forbidden_mask`:
-       * Nếu `options == 0`: Ô `u` bị cô lập hoàn toàn, không thể được chiếu sáng -> Trả về `(-1, 0)` (**Nhánh cụt**).
-       * Nếu `options.bit_count() == 1`: Chỉ còn duy nhất 1 vị trí `v` cứu sáng được `u` -> Trả về `(v, 1)` (**Ô bắt buộc / Unit Clause**).
-       * Nếu `options.bit_count() > 1`: Tìm ô tối có ít vị trí cứu sáng nhất (`cnt` nhỏ nhất), sau đó chọn ứng viên `v` trong `options` chiếu sáng được nhiều ô tối khác nhất (`max_gain`) và trả về `(v, 2)`.
-* **`compute_f_score(problem, lit_mask, rem_clues) -> Tuple[float, int]`**
-  * Tính điểm đánh giá Heuristic dựa trên cận dưới số đèn cần để phủ sáng vùng tối và tổng số đèn còn thiếu ở các bức tường:
-    ```python
-    unlit_cnt = (problem.all_white_mask ^ lit_mask).bit_count()
-    f_score = (unlit_cnt / problem.max_ray_len) + 2.0 * sum(rem_clues)
-    ```
+* **`get_next_candidates(problem, lit_mask, rem_clues) -> List[int]`**
+  * **Bước 1 (Tự động khóa ô — `blocked_mask`):** Hợp (`|`) mặt nạ các ô đã sáng (`lit_mask`) với mặt nạ các ô kề những bức tường đã đủ đèn (`rem_clues[c_idx] == 0`). Mọi ô có bit `1` trong `blocked_mask` đều bị cấm đặt thêm đèn.
+  * **Bước 2 (Quét ràng buộc tường có số theo MRV):** Với mỗi bức tường còn thiếu đèn (`need = rem_clues[c_idx] > 0`), lọc danh sách các ô trống hợp lệ `avail_cells` (có `cnt` ô):
+    * Nếu `cnt < need`: Phát hiện nhánh cụt -> Trả về `[]` để cắt tỉa ngay lập tức.
+    * Nếu `cnt == need`: Nước đi bắt buộc -> Trả về danh sách 1 phần tử `[avail_cells[0]]` để đặt đèn ngay mà không gây phân nhánh.
+    * Nếu `cnt > need`: Ghi nhận `avail_cells` nếu `cnt < min_choices`.
+  * **Bước 3 (Quét các ô trắng đang tối theo MRV):** Với mỗi ô tối `u`, tìm mặt nạ các vị trí hợp lệ có thể chiếu sáng `u` là `options_mask = ray_mask[u] & ~blocked_mask` (có `cnt` vị trí):
+    * Nếu `options_mask == 0`: Ô tối `u` bị cô lập hoàn toàn -> Trả về `[]` (Cắt tỉa).
+    * Nếu `cnt < min_choices`: Cập nhật `min_choices = cnt` và trích xuất danh sách các ô ứng viên `v` từ `options_mask`.
+* **`compute_f_score(problem, bulbs_mask, lit_mask, rem_clues) -> Tuple[float, int]`**
+  * Tính điểm đánh giá chuẩn A* theo công thức `f(n) = g(n) + h(n)`:
+    * `g(n)`: Số lượng bóng đèn đã đặt trên bàn cờ (`bulbs_mask.bit_count()`).
+    * `h(n)`: Cận dưới số bóng đèn cần đặt thêm để phủ sáng các ô tối còn lại và thỏa mãn các bức tường có số:
+      ```python
+      unlit_cnt = (problem.all_white_mask ^ lit_mask).bit_count()
+      g_cost = bulbs_mask.bit_count()
+      h_cost = (unlit_cnt / problem.max_ray_len) + sum(rem_clues)
+      f_score = g_cost + h_cost
+      ```
 * **`solve_astar(problem: lg.AkariProblem) -> Tuple[Optional[int], int]`**
-  * Khởi chạy `fast_propagate` tại trạng thái gốc và đưa vào hàng đợi ưu tiên `open_set`.
-  * Khi rút một `node` khỏi `open_set`, chạy vòng lặp trượt (**Unit Propagation**): nếu `pick_next_decision` trả về `status == 1`, đặt đèn trực tiếp và gọi `fast_propagate` liên tục mà không cần tạo `AStarNode` mới.
-  * Khi gặp `status == 2` tại ô `branch_u`, tách thành 2 nhánh con độc lập đẩy vào `open_set`:
-    * **Nhánh 1:** Đặt bóng đèn tại `branch_u` (`bulbs_mask | (1 << branch_u)`).
-    * **Nhánh 2:** Cấm đặt bóng đèn tại `branch_u` (`forbidden_mask | (1 << branch_u)`).
+  * Khởi tạo trạng thái gốc `(f0, unlit0, 0, 0, initial_clues)` trong `open_set` và `visited = {0}`.
+  * Ở mỗi bước lặp, rút trạng thái có `f_score` nhỏ nhất ra khỏi `open_set`. Nếu `unlit_cnt == 0` và `all(c == 0 for c in rem_clues)` thì trả về nghiệm `(bulbs_mask, nodes_explored)`.
+  * Gọi `get_next_candidates` để lấy danh sách ứng viên `candidates` của ràng buộc chặt nhất, sau đó thử đặt bóng đèn vào từng vị trí `v` trong `candidates` và đẩy trạng thái con chưa từng thăm vào `open_set`.
 
 ---
 
 ## 5. Module `test_akari.py` — Sinh Bản đồ & Đo lường Hiệu năng
 
-Module này cung cấp bộ dữ liệu kiểm thử tự động và thu thập bảng số liệu về thời gian thực thi cùng mức tiêu tốn bộ nhớ phục vụ báo cáo[cite: 6].
+Module này cung cấp bộ dữ liệu kiểm thử tự động và thu thập bảng số liệu về thời gian thực thi cùng mức tiêu tốn bộ nhớ phục vụ báo cáo.
 
 * **`generate_solvable_akari(rows: int, cols: int, seed: int) -> List[List[int]]`**
   * Tạo các bức tường đen đối xứng tâm trên lưới `rows x cols`.
@@ -158,7 +145,7 @@ Module này cung cấp bộ dữ liệu kiểm thử tự động và thu thập
   * Đếm số đèn trong nghiệm ẩn quanh các bức tường để gán con số gợi ý `0..4`, từ đó cam kết mọi bản đồ sinh ra đều **100% có nghiệm hợp lệ**.
 * **`measure_solver(solver_func, problem: AkariProblem)`**
   * Sử dụng `time.perf_counter()` để đo thời gian thực thi chính xác tới phần nghìn mili-giây (`ms`).
-  * Sử dụng thư viện chuẩn `tracemalloc` (`tracemalloc.get_traced_memory()`) để ghi nhận đỉnh bộ nhớ cấp phát (`Peak Memory` tính theo `KB`) của từng giải thuật[cite: 6].
+  * Sử dụng thư viện chuẩn `tracemalloc` (`tracemalloc.get_traced_memory()`) để ghi nhận đỉnh bộ nhớ cấp phát (`Peak Memory` tính theo `KB`) của từng giải thuật.
 * **`TestAkariBenchmark(unittest.TestCase)`**
   * Chạy kiểm thử tự động từ kích thước nhỏ (`6x6`) đến phức tạp (`14x14`), đối chiếu tính đúng đắn qua `problem.is_goal(sol)` và in bảng so sánh trực tiếp ra màn hình.
 
@@ -166,7 +153,7 @@ Module này cung cấp bộ dữ liệu kiểm thử tự động và thu thập
 
 ## 6. Hướng dẫn Chạy Chương trình
 
-Yêu cầu môi trường: **Python 3.10+** (hỗ trợ sẵn phương thức `int.bit_count()` ở cấp độ C, không cần cài đặt thêm thư viện ngoài)[cite: 6].
+Yêu cầu môi trường: **Python 3.10+** (hỗ trợ sẵn phương thức `int.bit_count()` ở cấp độ C, không cần cài đặt thêm thư viện ngoài).
 
 Chạy trực tiếp bộ kiểm thử và đo lường Benchmark từ thư mục gốc của dự án:
 
@@ -195,7 +182,7 @@ dfs_mask, dfs_nodes = blind_search.solve_dfs(problem)
 print(f"DFS duyệt {dfs_nodes} nodes:")
 print(problem.render(dfs_mask))
 
-# 2. Giải bằng A* (Heuristic Search)
+# 2. Giải bằng Constructive A* (Heuristic Search)
 astar_mask, astar_nodes = heuristic_search.solve_astar(problem)
 print(f"A* duyệt {astar_nodes} nodes:")
 print(problem.render(astar_mask))
