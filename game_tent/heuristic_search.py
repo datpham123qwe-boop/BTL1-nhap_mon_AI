@@ -3,7 +3,7 @@ import heapq
 from itertools import count
 
 try:
-    from game_minesweeper.logic import TentsAndTreeState, TENT
+    from game_tent.logic import TentsAndTreeState, TENT
 except ImportError:
     from logic import TentsAndTreeState, TENT
 
@@ -89,15 +89,3 @@ def A_star_search(state, tree_index=0):
             heapq.heappush(frontier, (ng + nh, nh, next(serial), ng, idx + 1, nxt))
 
     return None, expanded
-
-"""
-Hàm hiện trả về một tuple, không phải giá trị Boolean:
-
-solution, expanded = A_star_search(state)
-
-if solution is not None:
-    print(solution.grid)
-    print("Số nút đã mở rộng:", expanded)
-else:
-    print("Không tìm thấy lời giải")
-"""

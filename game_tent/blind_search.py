@@ -1,4 +1,4 @@
-from game_minesweeper.logic import TentsAndTreeState, TENT, EMPTY
+from game_tent.logic import TentsAndTreeState, TENT, EMPTY
 
 
 def dfs_search(state, tree_index=0):
