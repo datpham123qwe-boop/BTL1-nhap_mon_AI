@@ -19,7 +19,7 @@ Hệ thống được phát triển 100% bằng ngôn ngữ **Python 3**, sử d
 ## 📁 2. Cấu trúc Thư mục Dự án
 
 ```text
-Pipe/
+/
 ├── game_akari/              # Module hoàn chỉnh cho bài toán Akari (Light Up)
 │   ├── logic.py             # Mô hình hóa Bitmask O(1), tiền xử lý tia sáng, kiểm tra Goal
 │   ├── blind_search.py      # Giải thuật DFS Backtracking trên cây nhị phân quyết định
@@ -119,54 +119,3 @@ A* sử dụng cấu trúc Min-Heap `heapq` với hàm đánh giá $f(n) = g(n) 
 
 ---
 
-## 📊 5. Bảng So sánh Hiệu năng (DFS vs A*)
-
-Dưới đây là bảng tổng hợp số liệu đo đạc thực tế trên hệ thống (CPU Intel Core i5 / Python 3):
-
-| Bài toán | Kích thước | Thuật toán | Thời gian (ms) | Bộ nhớ (KB) | Số Nodes duyệt | Đánh giá học thuật |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Akari** | 8x8 | **DFS (Mù)** | 8.64 ms | 52.4 KB | 642 | Thử sai tuần tự, dễ backtrack sâu |
-| *(Light Up)* | 8x8 | **A\* (Heuristic)** | **1.12 ms** | **28.6 KB** | **8** | Cắt tỉa sâu, đi thẳng tới đích |
-| | 12x12 | **DFS (Mù)** | 1,850.20 ms | 1,820.5 KB | 124,500 | Bùng nổ tổ hợp do không có Lookahead |
-| | 12x12 | **A\* (Heuristic)** | **8.20 ms** | **145.2 KB** | **21** | Tự động điền các ô bắt buộc (Unit Slide) |
-| **Tents** | 8x8 | **DFS (Mù)** | 0.08 ms | 1.17 KB | 14 | In-place nhanh ở map thưa |
-| *(Cắm lều)* | 8x8 | **A\* (Heuristic)** | 1.36 ms | 4.08 KB | 10 | Tốn chi phí clone state và Forward Checking |
-| | 12x12 | **DFS (Mù)** | 0.41 ms | 2.11 KB | 68 | Số node tăng nhanh khi cây va chạm |
-| | 12x12 | **A\* (Heuristic)** | 4.87 ms | 10.36 KB | **22** | Mở rộng đúng 22 node cho 22 cây (tối ưu tuyệt đối) |
-
-> **Nhận xét học thuật:**
-> * **Về số Node duyệt (AI Efficiency):** A* áp đảo hoàn toàn DFS trên mọi bài toán (giảm từ 60% đến hơn 99% số node cần khám phá).
-> * **Sự đánh đổi Thời gian vs Không gian:** DFS nhanh hơn về thời gian milli-giây ở các map nhỏ nhờ cơ chế *In-place Mutation* (không tốn chi phí sao chép đối tượng), nhưng A* thể hiện sự vượt trội và tính ổn định bền vững khi bài toán mở rộng quy mô.
-
----
-
-## 🚀 6. Hướng dẫn Khởi chạy và Kiểm thử
-
-### 6.1. Yêu cầu môi trường
-* Hệ điều hành: Windows, Linux hoặc macOS.
-* Python: Phiên bản **Python 3.8+** (không yêu cầu cài đặt thư viện bên thứ ba).
-
-### 6.2. Các lệnh thực thi
-
-1. **Chạy kiểm thử tổng hợp cho bài toán Tents and Trees:**
-   ```bash
-   python main.py
-   ```
-
-2. **Chạy kiểm tra đơn vị độc lập cho Akari (Blind Search):**
-   ```bash
-   python -c "import logic as lg, blind_search as bs; p = lg.AkariProblem([[-2,-2],[-2,-1]]); print('Nghiệm:', bs.solve(p))"
-   ```
-
-3. **Chạy kiểm tra đơn vị độc lập cho Akari (Heuristic Search):**
-   ```bash
-   python -c "import logic as lg, heuristic_search as hs; p = lg.AkariProblem([[-2,-2],[-2,-1]]); print('Nghiệm:', hs.solve(p))"
-   ```
-
----
-
-## 👥 7. Thông tin Tác giả
-
-* **Môn học:** Trí tuệ Nhân tạo (CO3061 / CO3062)
-* **Lớp:** HK1 (2026 - 2027)
-* **Khoa:** Khoa học và Kỹ thuật Máy tính — Trường ĐH Bách Khoa, ĐHQG-HCM
