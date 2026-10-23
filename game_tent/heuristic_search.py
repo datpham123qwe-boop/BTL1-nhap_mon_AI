@@ -55,7 +55,7 @@ def heuristic(state, tree_index):
     return len(state.trees) - tree_index
 
 
-def A_star_search(state, tree_index=0):
+def A_star_search(state, tree_index=0, on_step=None):
     """Trả về (goal_state, số nút đã mở rộng), hoặc (None, số nút) nếu vô nghiệm."""
     h0 = heuristic(state, tree_index)
     if h0 == INF:
@@ -69,10 +69,12 @@ def A_star_search(state, tree_index=0):
     while frontier:
         f, h, _, g, idx, current = heapq.heappop(frontier)
 
+        expanded += 1
+        if on_step is not None:
+            on_step(current.grid, expanded)
+
         if is_goal(current, idx):
             return current, expanded
-
-        expanded += 1
 
         for r, c in current.get_successors(idx):
             grid = [row[:] for row in current.grid]

@@ -1,0 +1,1 @@
+Python 3.12.4; Windows-11-10.0.26200-SP0; CPU: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel; repeats=5; timeout=10.0s per worker

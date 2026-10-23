@@ -1,8 +1,8 @@
 from typing import Tuple, Optional
-import logic as lg
+from game_akari import logic as lg
 
 
-def solve_dfs(problem: lg.AkariProblem) -> Tuple[Optional[int], int]:
+def solve_dfs(problem: lg.AkariProblem, on_step=None) -> Tuple[Optional[int], int]:
     """
     Giải thuật Tìm kiếm mù theo chiều sâu (DFS Backtracking) có tối ưu Lookahead.
     Duyệt tuần tự từ ô trắng u = 0 đến num_white - 1.
@@ -24,6 +24,8 @@ def solve_dfs(problem: lg.AkariProblem) -> Tuple[Optional[int], int]:
     while stack:
         u, bulbs_mask, lit_mask, rem_clues = stack.pop()
         nodes_explored += 1
+        if on_step is not None:
+            on_step(bulbs_mask, nodes_explored)
 
         # =================================================================
         # TODO 2: Kiểm tra điều kiện dừng khi đã duyệt hết ô trắng (u == num_white)
