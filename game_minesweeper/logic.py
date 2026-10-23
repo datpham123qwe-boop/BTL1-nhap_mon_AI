@@ -28,8 +28,7 @@ class TentsAndTreeState:
             col_tents.append(num_tent)
         self.col_tents=col_tents
 
-    def is_valid_tent_placement(self,r,c):
-        """kiem tra xem co the dat leu tai o (r,c) hay khong"""
+    """def is_valid_tent_placement(self,r,c):
         if not (0<=r<len(self.grid) and 0<=c<len(self.grid[0])): return False
         if self.grid[r][c]!=EMPTY: return False
 
@@ -47,7 +46,6 @@ class TentsAndTreeState:
         return True
 
     def get_successors(self,tree_index):
-        """ham sinh cac trang thai ke tiep"""
         if tree_index>=len(self.trees):
             return []
         successors=[]
@@ -57,4 +55,31 @@ class TentsAndTreeState:
             if self.is_valid_tent_placement(r,c):
                 successors.append((r, c))
         return successors
-            
+        
+    """
+
+    def is_valid_tent_placement(self, r, c, check_limits=True):
+        if not (0 <= r < len(self.grid) and 0 <= c < len(self.grid[0])): return False
+        if self.grid[r][c] != EMPTY: return False
+
+        if check_limits:
+            if self.row_tents[r] >= self.row_limits[r]: return False
+            if self.col_tents[c] >= self.col_limits[c]: return False
+
+        directions = [(1,0),(0,1),(-1,0),(0,-1),(1,1),(-1,-1),(-1,1),(1,-1)]
+        for dr, dc in directions:
+            nr, nc = dr + r, dc + c
+            if 0 <= nr < len(self.grid) and 0 <= nc < len(self.grid[0]):
+                if self.grid[nr][nc] == TENT:
+                    return False
+        return True
+
+    def get_successors(self, tree_index, check_limits=True):
+        if tree_index >= len(self.trees):
+            return []
+        successors = []
+        tree_r, tree_c = self.trees[tree_index]
+        for r, c in [(tree_r-1, tree_c), (tree_r+1, tree_c), (tree_r, tree_c-1), (tree_r, tree_c+1)]:
+            if self.is_valid_tent_placement(r, c, check_limits):
+                successors.append((r, c))
+        return successors
