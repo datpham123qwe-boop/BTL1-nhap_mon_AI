@@ -11,9 +11,6 @@ def solve_dfs(problem: lg.AkariProblem, on_step=None) -> Tuple[Optional[int], in
     num_white = problem.num_white
     initial_clues = tuple(c[2] for c in problem.clues)
 
-    # =====================================================================
-    # TODO 1: Tạo mảng suffix_mask[i] chứa bitmask của các ô từ i đến num_white - 1
-    # =====================================================================
     suffix_mask = [0] * (num_white + 1)
     for i in range(num_white - 1, -1, -1):
         suffix_mask[i] = suffix_mask[i + 1] | (1 << i)
@@ -27,17 +24,11 @@ def solve_dfs(problem: lg.AkariProblem, on_step=None) -> Tuple[Optional[int], in
         if on_step is not None:
             on_step(bulbs_mask, nodes_explored)
 
-        # =================================================================
-        # TODO 2: Kiểm tra điều kiện dừng khi đã duyệt hết ô trắng (u == num_white)
-        # =================================================================
         if u == num_white:
             if lit_mask == problem.all_white_mask and all(c == 0 for c in rem_clues):
                 return bulbs_mask, nodes_explored
             continue
 
-        # =================================================================
-        # TODO 3: Xét Nhánh 1 - KHÔNG đặt đèn tại ô u (can_leave_empty)
-        # =================================================================
         can_leave_empty = True
         for c_idx in problem.white_to_clues[u]:
             rem_cells = (problem.clue_adj_mask[c_idx] & suffix_mask[u + 1]).bit_count()
@@ -45,13 +36,9 @@ def solve_dfs(problem: lg.AkariProblem, on_step=None) -> Tuple[Optional[int], in
                 can_leave_empty = False
                 break
 
-        # =================================================================
-        # TODO 4: Xét Nhánh 2 - ĐẶT ĐÈN tại ô u (can_place_bulb)
-        # =================================================================
         can_place_bulb = False
         new_clues = None
-        
-        # Điều kiện 1: Ô u chưa bị chiếu sáng bởi đèn khác
+
         if not ((lit_mask >> u) & 1):
             valid = True
             temp_clues = list(rem_clues)
@@ -68,9 +55,6 @@ def solve_dfs(problem: lg.AkariProblem, on_step=None) -> Tuple[Optional[int], in
                 can_place_bulb = True
                 new_clues = tuple(temp_clues)
 
-        # =================================================================
-        # TODO 5: Đẩy các trạng thái con hợp lệ vào stack (u + 1)
-        # =================================================================
         if can_place_bulb:
             stack.append((u + 1, bulbs_mask | (1 << u), lit_mask | problem.ray_mask[u], new_clues))
         if can_leave_empty:

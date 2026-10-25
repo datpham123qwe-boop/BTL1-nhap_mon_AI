@@ -2,16 +2,15 @@
 import heapq
 from itertools import count
 
-try:
-    from game_tent.logic import TentsAndTreeState, TENT
-except ImportError:
-    from logic import TentsAndTreeState, TENT
+
+from game_tent import logic
+
 
 #số vô cực, dùng để đánh dấu trạng thái không có lời giải
 INF = float("inf")
 
 #kiểm tra trạng thái đích
-def is_goal(state, tree_index):
+def is_goal(state: logic.TentsAndTreeState, tree_index):
     return (
         tree_index == len(state.trees)
         and state.row_tents == state.row_limits
@@ -21,7 +20,7 @@ def is_goal(state, tree_index):
 
 #kiểm tra khả năng hoàn thành
 #thực hiện forward checking: loại sớm một trạng thái nếu các điều kiện cần lời giải đã không còn đúng
-def is_feasible(state, tree_index):
+def is_feasible(state: logic.TentsAndTreeState, tree_index):
     """Forward checking: False nếu chắc chắn không thể hoàn thành lời giải."""
     remaining = len(state.trees) - tree_index
 
@@ -49,13 +48,13 @@ def is_feasible(state, tree_index):
     return True
 
 
-def heuristic(state, tree_index):
+def heuristic(state: logic.TentsAndTreeState, tree_index):
     if not is_feasible(state, tree_index):
         return INF
     return len(state.trees) - tree_index
 
 
-def A_star_search(state, tree_index=0, on_step=None):
+def A_star_search(state: logic.TentsAndTreeState, tree_index=0, on_step=None):
     """Trả về (goal_state, số nút đã mở rộng), hoặc (None, số nút) nếu vô nghiệm."""
     h0 = heuristic(state, tree_index)
     if h0 == INF:
@@ -78,8 +77,8 @@ def A_star_search(state, tree_index=0, on_step=None):
 
         for r, c in current.get_successors(idx):
             grid = [row[:] for row in current.grid]
-            grid[r][c] = TENT
-            nxt = TentsAndTreeState(
+            grid[r][c] = logic.TENT
+            nxt = logic.TentsAndTreeState(
                 grid, current.row_limits, current.col_limits, current.trees
             )
 
