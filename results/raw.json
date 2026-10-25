@@ -5,7 +5,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0274,
+    "ms": 0.0243,
     "kib": 0,
     "nodes": 23
   },
@@ -15,7 +15,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.1184,
+    "ms": 0.1078,
     "kib": 6.0546875,
     "nodes": 23
   },
@@ -25,7 +25,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0264,
+    "ms": 0.0307,
     "kib": 0,
     "nodes": 23
   },
@@ -35,7 +35,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.1205,
+    "ms": 0.1078,
     "kib": 6.0546875,
     "nodes": 23
   },
@@ -45,7 +45,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0272,
+    "ms": 0.0271,
     "kib": 0,
     "nodes": 23
   },
@@ -55,7 +55,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.2185,
+    "ms": 0.1154,
     "kib": 6.0546875,
     "nodes": 23
   },
@@ -65,7 +65,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.027,
+    "ms": 0.0265,
     "kib": 0,
     "nodes": 23
   },
@@ -75,7 +75,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.1147,
+    "ms": 0.1152,
     "kib": 6.0546875,
     "nodes": 23
   },
@@ -85,7 +85,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0357,
+    "ms": 0.0279,
     "kib": 0,
     "nodes": 23
   },
@@ -95,7 +95,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.1183,
+    "ms": 0.1404,
     "kib": 6.0546875,
     "nodes": 23
   },
@@ -105,7 +105,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0559,
+    "ms": 0.0536,
     "kib": 0,
     "nodes": 7
   },
@@ -115,7 +115,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.2624,
+    "ms": 0.2634,
     "kib": 6.453125,
     "nodes": 7
   },
@@ -123,6 +123,46 @@
     "case": "A5-11",
     "algorithm": "A*",
     "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0613,
+    "kib": 0,
+    "nodes": 7
+  },
+  {
+    "case": "A5-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2591,
+    "kib": 6.453125,
+    "nodes": 7
+  },
+  {
+    "case": "A5-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0543,
+    "kib": 0,
+    "nodes": 7
+  },
+  {
+    "case": "A5-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2603,
+    "kib": 6.453125,
+    "nodes": 7
+  },
+  {
+    "case": "A5-11",
+    "algorithm": "A*",
+    "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
     "ms": 0.0554,
@@ -132,50 +172,10 @@
   {
     "case": "A5-11",
     "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.2644,
-    "kib": 6.453125,
-    "nodes": 7
-  },
-  {
-    "case": "A5-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0546,
-    "kib": 0,
-    "nodes": 7
-  },
-  {
-    "case": "A5-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.2598,
-    "kib": 6.453125,
-    "nodes": 7
-  },
-  {
-    "case": "A5-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0667,
-    "kib": 0,
-    "nodes": 7
-  },
-  {
-    "case": "A5-11",
-    "algorithm": "A*",
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.2929,
+    "ms": 0.2589,
     "kib": 6.453125,
     "nodes": 7
   },
@@ -185,7 +185,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.1061,
+    "ms": 0.053,
     "kib": 0,
     "nodes": 7
   },
@@ -195,12 +195,412 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.2582,
+    "ms": 0.2592,
     "kib": 6.453125,
     "nodes": 7
   },
   {
     "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0569,
+    "kib": 0,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.1304,
+    "kib": 2.0703125,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0561,
+    "kib": 0,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.1301,
+    "kib": 2.0703125,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0568,
+    "kib": 0,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.1299,
+    "kib": 2.0703125,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0555,
+    "kib": 0,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.13,
+    "kib": 2.0703125,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0559,
+    "kib": 0,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.1302,
+    "kib": 2.0703125,
+    "nodes": 17
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1427,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4645,
+    "kib": 3.171875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1484,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4692,
+    "kib": 3.171875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2646,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4554,
+    "kib": 3.171875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1464,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4587,
+    "kib": 3.171875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2857,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-11",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4686,
+    "kib": 3.171875,
+    "nodes": 6
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0366,
+    "kib": 0,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2213,
+    "kib": 8.078125,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.038,
+    "kib": 0,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2113,
+    "kib": 8.078125,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0396,
+    "kib": 0,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2202,
+    "kib": 8.078125,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0374,
+    "kib": 0,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2231,
+    "kib": 8.078125,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0376,
+    "kib": 0,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2091,
+    "kib": 8.078125,
+    "nodes": 40
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0709,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3617,
+    "kib": 7.1015625,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0697,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.392,
+    "kib": 7.1015625,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0683,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3938,
+    "kib": 7.1015625,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0702,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3903,
+    "kib": 7.1015625,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0689,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "A5-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.395,
+    "kib": 7.1015625,
+    "nodes": 10
+  },
+  {
+    "case": "T5-29",
     "algorithm": "DFS",
     "repetition": 1,
     "mode": "time",
@@ -210,443 +610,43 @@
     "nodes": 8
   },
   {
-    "case": "T5-11",
+    "case": "T5-29",
     "algorithm": "DFS",
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.0778,
-    "kib": 2.125,
+    "ms": 0.0832,
+    "kib": 2.0390625,
     "nodes": 8
   },
   {
-    "case": "T5-11",
+    "case": "T5-29",
     "algorithm": "DFS",
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0342,
+    "ms": 0.0372,
     "kib": 0,
     "nodes": 8
   },
   {
-    "case": "T5-11",
+    "case": "T5-29",
     "algorithm": "DFS",
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.0776,
-    "kib": 2.125,
+    "ms": 0.0826,
+    "kib": 2.0390625,
     "nodes": 8
   },
   {
-    "case": "T5-11",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0319,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0798,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0349,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0796,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0358,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0769,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1695,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6582,
-    "kib": 6.046875,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1662,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6545,
-    "kib": 6.046875,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1608,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.67,
-    "kib": 6.046875,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1623,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6537,
-    "kib": 6.046875,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1469,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-11",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6676,
-    "kib": 6.046875,
-    "nodes": 6
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0379,
-    "kib": 0,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.2108,
-    "kib": 8.078125,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0379,
-    "kib": 0,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.2147,
-    "kib": 8.078125,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
+    "case": "T5-29",
     "algorithm": "DFS",
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
     "ms": 0.0373,
     "kib": 0,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.1999,
-    "kib": 8.078125,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0388,
-    "kib": 0,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.2406,
-    "kib": 8.078125,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0385,
-    "kib": 0,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.2112,
-    "kib": 8.078125,
-    "nodes": 40
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0668,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.3896,
-    "kib": 7.1015625,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0701,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.3886,
-    "kib": 7.1015625,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.068,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.3947,
-    "kib": 7.1015625,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0661,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.3942,
-    "kib": 7.1015625,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0706,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "A5-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.3898,
-    "kib": 7.1015625,
-    "nodes": 10
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0328,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0744,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0323,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0724,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0315,
-    "kib": 0,
     "nodes": 8
   },
   {
@@ -655,1559 +655,1559 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.076,
-    "kib": 2.125,
+    "ms": 0.0833,
+    "kib": 2.0390625,
     "nodes": 8
   },
   {
     "case": "T5-29",
     "algorithm": "DFS",
     "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0451,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0721,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0316,
-    "kib": 0,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0708,
-    "kib": 2.125,
-    "nodes": 8
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.155,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.7647,
-    "kib": 6.015625,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1535,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6379,
-    "kib": 6.015625,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1551,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6734,
-    "kib": 6.015625,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1566,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6464,
-    "kib": 6.015625,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1572,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6353,
-    "kib": 6.015625,
-    "nodes": 6
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0723,
-    "kib": 0,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.7965,
-    "kib": 12.9765625,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0865,
-    "kib": 0,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.8168,
-    "kib": 12.9765625,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0723,
-    "kib": 0,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.7995,
-    "kib": 12.9765625,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0765,
-    "kib": 0,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.7999,
-    "kib": 12.9765625,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0727,
-    "kib": 0,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.7967,
-    "kib": 12.9765625,
-    "nodes": 189
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1452,
-    "kib": 0,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2633,
-    "kib": 13.21875,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1448,
-    "kib": 0,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2947,
-    "kib": 13.21875,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1405,
-    "kib": 0,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2135,
-    "kib": 13.21875,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.143,
-    "kib": 0,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2027,
-    "kib": 13.21875,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1438,
-    "kib": 0,
-    "nodes": 28
-  },
-  {
-    "case": "A5-47",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2012,
-    "kib": 13.21875,
-    "nodes": 28
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0298,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0684,
-    "kib": 2.125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0302,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0677,
-    "kib": 2.125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0304,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0745,
-    "kib": 2.125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0314,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0667,
-    "kib": 2.125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0286,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.067,
-    "kib": 2.125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1651,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.7095,
-    "kib": 5.8203125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1667,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6845,
-    "kib": 5.8203125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1684,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6932,
-    "kib": 5.8203125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.164,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6842,
-    "kib": 5.8203125,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1647,
-    "kib": 0,
-    "nodes": 6
-  },
-  {
-    "case": "T5-47",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.6876,
-    "kib": 5.8203125,
-    "nodes": 6
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.368,
-    "kib": 0,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 4.1569,
-    "kib": 19.734375,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3068,
-    "kib": 0,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 4.1549,
-    "kib": 19.734375,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3484,
-    "kib": 0,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 4.1595,
-    "kib": 19.734375,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.2915,
-    "kib": 0,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 4.6417,
-    "kib": 19.734375,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.2906,
-    "kib": 0,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 4.1551,
-    "kib": 19.734375,
-    "nodes": 771
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1546,
-    "kib": 0,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5789,
-    "kib": 15.78125,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1522,
-    "kib": 0,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5561,
-    "kib": 15.78125,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.149,
-    "kib": 0,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5209,
-    "kib": 15.78125,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1507,
-    "kib": 0,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5267,
-    "kib": 15.78125,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1564,
-    "kib": 0,
-    "nodes": 18
-  },
-  {
-    "case": "A7-11",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 2.2301,
-    "kib": 15.78125,
-    "nodes": 18
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0372,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0934,
-    "kib": 3.15625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0371,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0924,
-    "kib": 3.15625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0367,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0943,
-    "kib": 3.15625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0372,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0947,
-    "kib": 3.15625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0372,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.0947,
-    "kib": 3.15625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3486,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.3805,
-    "kib": 8.6640625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3522,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.3817,
-    "kib": 8.6640625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3539,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.3853,
-    "kib": 8.6640625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3532,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.4205,
-    "kib": 8.6640625,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.351,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-11",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.4717,
-    "kib": 8.6640625,
-    "nodes": 10
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.5874,
-    "kib": 0,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 9.7333,
-    "kib": 21.1015625,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.6034,
-    "kib": 0,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 9.8411,
-    "kib": 21.1015625,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.586,
-    "kib": 0,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 10.3782,
-    "kib": 21.1015625,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.5905,
-    "kib": 0,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 10.507,
-    "kib": 21.1015625,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.594,
-    "kib": 0,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 10.3222,
-    "kib": 21.1015625,
-    "nodes": 1724
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1921,
-    "kib": 0,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 4.4777,
-    "kib": 17.421875,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1972,
-    "kib": 0,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 2.842,
-    "kib": 17.421875,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1968,
-    "kib": 0,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 2.4149,
-    "kib": 17.421875,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.2216,
-    "kib": 0,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 2.4864,
-    "kib": 17.421875,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1968,
-    "kib": 0,
-    "nodes": 24
-  },
-  {
-    "case": "A7-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 2.3904,
-    "kib": 17.421875,
-    "nodes": 24
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0781,
-    "kib": 0,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.1945,
-    "kib": 3.15625,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0904,
-    "kib": 0,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.1949,
-    "kib": 3.15625,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0716,
-    "kib": 0,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.1935,
-    "kib": 3.15625,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0865,
-    "kib": 0,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.195,
-    "kib": 3.15625,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.0766,
-    "kib": 0,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 0.1983,
-    "kib": 3.15625,
-    "nodes": 27
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.392,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5914,
-    "kib": 8.8984375,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3523,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5446,
-    "kib": 8.8984375,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.6844,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.5187,
-    "kib": 8.8984375,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.3838,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.3726,
-    "kib": 8.8984375,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.4052,
-    "kib": 0,
-    "nodes": 10
-  },
-  {
-    "case": "T7-29",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.504,
-    "kib": 8.8984375,
-    "nodes": 10
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.5191,
-    "kib": 0,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 7.4334,
-    "kib": 19.5546875,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.5096,
-    "kib": 0,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 7.8011,
-    "kib": 19.5546875,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.5016,
-    "kib": 0,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 7.698,
-    "kib": 19.5546875,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.515,
-    "kib": 0,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 7.7056,
-    "kib": 19.5546875,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.5034,
-    "kib": 0,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 7.721,
-    "kib": 19.5546875,
-    "nodes": 1240
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1122,
-    "kib": 0,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2881,
-    "kib": 13.796875,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1142,
-    "kib": 0,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2889,
-    "kib": 13.796875,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1171,
-    "kib": 0,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2923,
-    "kib": 13.796875,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1174,
-    "kib": 0,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.3103,
-    "kib": 13.796875,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "SOLVED",
-    "ms": 0.1172,
-    "kib": 0,
-    "nodes": 13
-  },
-  {
-    "case": "A7-47",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "SOLVED",
-    "ms": 1.2906,
-    "kib": 13.796875,
-    "nodes": 13
-  },
-  {
-    "case": "T7-47",
-    "algorithm": "DFS",
-    "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
     "ms": 0.0375,
     "kib": 0,
+    "nodes": 8
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.08,
+    "kib": 2.0390625,
+    "nodes": 8
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.037,
+    "kib": 0,
+    "nodes": 8
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.0833,
+    "kib": 2.0390625,
+    "nodes": 8
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1251,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4139,
+    "kib": 2.7421875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1331,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4171,
+    "kib": 2.7421875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.135,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4175,
+    "kib": 2.7421875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1316,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4157,
+    "kib": 2.7421875,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1302,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4176,
+    "kib": 2.7421875,
+    "nodes": 6
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0721,
+    "kib": 0,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.7989,
+    "kib": 12.9765625,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0736,
+    "kib": 0,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.8194,
+    "kib": 12.9765625,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0734,
+    "kib": 0,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.8056,
+    "kib": 12.9765625,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0753,
+    "kib": 0,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.8018,
+    "kib": 12.9765625,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.0734,
+    "kib": 0,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.7977,
+    "kib": 12.9765625,
+    "nodes": 189
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1446,
+    "kib": 0,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2178,
+    "kib": 13.21875,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1425,
+    "kib": 0,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.206,
+    "kib": 13.21875,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1432,
+    "kib": 0,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4397,
+    "kib": 13.21875,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1421,
+    "kib": 0,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2211,
+    "kib": 13.21875,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1493,
+    "kib": 0,
+    "nodes": 28
+  },
+  {
+    "case": "A5-47",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2023,
+    "kib": 13.21875,
+    "nodes": 28
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.12,
+    "kib": 0,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.2998,
+    "kib": 2.0390625,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1226,
+    "kib": 0,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3022,
+    "kib": 2.0390625,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1193,
+    "kib": 0,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3016,
+    "kib": 2.0390625,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1223,
+    "kib": 0,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3021,
+    "kib": 2.0390625,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1193,
+    "kib": 0,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.3005,
+    "kib": 2.0390625,
+    "nodes": 44
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1543,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4902,
+    "kib": 3.140625,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1553,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4948,
+    "kib": 3.140625,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1528,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4894,
+    "kib": 3.140625,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.152,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4972,
+    "kib": 3.140625,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1544,
+    "kib": 0,
+    "nodes": 6
+  },
+  {
+    "case": "T5-47",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.4884,
+    "kib": 3.140625,
+    "nodes": 6
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2954,
+    "kib": 0,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 4.285,
+    "kib": 19.734375,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2937,
+    "kib": 0,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 4.1508,
+    "kib": 19.734375,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2907,
+    "kib": 0,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 4.1534,
+    "kib": 19.734375,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2934,
+    "kib": 0,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 4.1563,
+    "kib": 19.734375,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2951,
+    "kib": 0,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 4.2158,
+    "kib": 19.734375,
+    "nodes": 771
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1531,
+    "kib": 0,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5346,
+    "kib": 15.78125,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1629,
+    "kib": 0,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5211,
+    "kib": 15.78125,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1535,
+    "kib": 0,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5378,
+    "kib": 15.78125,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1514,
+    "kib": 0,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5252,
+    "kib": 15.78125,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1537,
+    "kib": 0,
+    "nodes": 18
+  },
+  {
+    "case": "A7-11",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5448,
+    "kib": 15.78125,
+    "nodes": 18
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5682,
+    "kib": 0,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5424,
+    "kib": 3.40625,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5764,
+    "kib": 0,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4755,
+    "kib": 3.40625,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5763,
+    "kib": 0,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4931,
+    "kib": 3.40625,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.6691,
+    "kib": 0,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4859,
+    "kib": 3.40625,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5752,
+    "kib": 0,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4907,
+    "kib": 3.40625,
+    "nodes": 271
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.4419,
+    "kib": 0,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.5037,
+    "kib": 3.828125,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.4183,
+    "kib": 0,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4004,
+    "kib": 3.828125,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.4206,
+    "kib": 0,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.4039,
+    "kib": 3.828125,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.4218,
+    "kib": 0,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.3861,
+    "kib": 3.828125,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.418,
+    "kib": 0,
+    "nodes": 15
+  },
+  {
+    "case": "T7-11",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.3941,
+    "kib": 3.828125,
+    "nodes": 15
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5948,
+    "kib": 0,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 10.0933,
+    "kib": 21.1015625,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.6005,
+    "kib": 0,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 9.9371,
+    "kib": 21.1015625,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.6352,
+    "kib": 0,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 10.403,
+    "kib": 21.1015625,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.598,
+    "kib": 0,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 9.7313,
+    "kib": 21.1015625,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.6987,
+    "kib": 0,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 9.7559,
+    "kib": 21.1015625,
+    "nodes": 1724
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2067,
+    "kib": 0,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 2.4158,
+    "kib": 17.421875,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1957,
+    "kib": 0,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 2.407,
+    "kib": 17.421875,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1946,
+    "kib": 0,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 2.4045,
+    "kib": 17.421875,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1952,
+    "kib": 0,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 2.4072,
+    "kib": 17.421875,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1931,
+    "kib": 0,
+    "nodes": 24
+  },
+  {
+    "case": "A7-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 2.433,
+    "kib": 17.421875,
+    "nodes": 24
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 1.1136,
+    "kib": 0,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 3.0505,
+    "kib": 3.3515625,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 1.0498,
+    "kib": 0,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 3.1088,
+    "kib": 3.3515625,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 1.0345,
+    "kib": 0,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 3.1074,
+    "kib": 3.3515625,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 1.0609,
+    "kib": 0,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 3.0852,
+    "kib": 3.3515625,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 1.039,
+    "kib": 0,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 3.0737,
+    "kib": 3.3515625,
+    "nodes": 412
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.3064,
+    "kib": 0,
     "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.0841,
+    "kib": 3.765625,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.295,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.9389,
+    "kib": 3.765625,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.2972,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.9441,
+    "kib": 3.765625,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.3045,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.9516,
+    "kib": 3.765625,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.3076,
+    "kib": 0,
+    "nodes": 10
+  },
+  {
+    "case": "T7-29",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 0.9615,
+    "kib": 3.765625,
+    "nodes": 10
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5062,
+    "kib": 0,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 7.7147,
+    "kib": 19.5546875,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5121,
+    "kib": 0,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 7.8822,
+    "kib": 19.5546875,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5056,
+    "kib": 0,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 7.7849,
+    "kib": 19.5546875,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5055,
+    "kib": 0,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 7.6993,
+    "kib": 19.5546875,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.5133,
+    "kib": 0,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 7.0159,
+    "kib": 19.5546875,
+    "nodes": 1240
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1051,
+    "kib": 0,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2851,
+    "kib": 13.796875,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1153,
+    "kib": 0,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2716,
+    "kib": 13.796875,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1135,
+    "kib": 0,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2799,
+    "kib": 13.796875,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.117,
+    "kib": 0,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2964,
+    "kib": 13.796875,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.1163,
+    "kib": 0,
+    "nodes": 13
+  },
+  {
+    "case": "A7-47",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "SOLVED",
+    "ms": 1.2818,
+    "kib": 13.796875,
+    "nodes": 13
+  },
+  {
+    "case": "T7-47",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "SOLVED",
+    "ms": 0.6633,
+    "kib": 0,
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2215,9 +2215,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.0924,
-    "kib": 3.15625,
-    "nodes": 10
+    "ms": 1.8707,
+    "kib": 3.375,
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2225,9 +2225,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.036,
+    "ms": 0.7105,
     "kib": 0,
-    "nodes": 10
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2235,9 +2235,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.0916,
-    "kib": 3.15625,
-    "nodes": 10
+    "ms": 1.8794,
+    "kib": 3.375,
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2245,9 +2245,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0369,
+    "ms": 0.6635,
     "kib": 0,
-    "nodes": 10
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2255,9 +2255,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.093,
-    "kib": 3.15625,
-    "nodes": 10
+    "ms": 1.8706,
+    "kib": 3.375,
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2265,9 +2265,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0365,
+    "ms": 0.6715,
     "kib": 0,
-    "nodes": 10
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2275,9 +2275,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.0927,
-    "kib": 3.15625,
-    "nodes": 10
+    "ms": 1.8833,
+    "kib": 3.375,
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2285,9 +2285,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.0379,
+    "ms": 0.6821,
     "kib": 0,
-    "nodes": 10
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2295,9 +2295,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.0917,
-    "kib": 3.15625,
-    "nodes": 10
+    "ms": 1.8713,
+    "kib": 3.375,
+    "nodes": 251
   },
   {
     "case": "T7-47",
@@ -2305,7 +2305,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3388,
+    "ms": 0.2651,
     "kib": 0,
     "nodes": 10
   },
@@ -2315,8 +2315,8 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.3257,
-    "kib": 8.2890625,
+    "ms": 0.8512,
+    "kib": 3.734375,
     "nodes": 10
   },
   {
@@ -2325,7 +2325,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3387,
+    "ms": 0.2675,
     "kib": 0,
     "nodes": 10
   },
@@ -2335,8 +2335,8 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.3194,
-    "kib": 8.2890625,
+    "ms": 0.854,
+    "kib": 3.734375,
     "nodes": 10
   },
   {
@@ -2345,7 +2345,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3338,
+    "ms": 0.2627,
     "kib": 0,
     "nodes": 10
   },
@@ -2355,8 +2355,8 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.3094,
-    "kib": 8.2890625,
+    "ms": 0.8495,
+    "kib": 3.734375,
     "nodes": 10
   },
   {
@@ -2365,7 +2365,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.336,
+    "ms": 0.2668,
     "kib": 0,
     "nodes": 10
   },
@@ -2375,8 +2375,8 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.3906,
-    "kib": 8.2890625,
+    "ms": 0.9295,
+    "kib": 3.734375,
     "nodes": 10
   },
   {
@@ -2385,7 +2385,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3325,
+    "ms": 0.2631,
     "kib": 0,
     "nodes": 10
   },
@@ -2395,8 +2395,8 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.3088,
-    "kib": 8.2890625,
+    "ms": 0.8686,
+    "kib": 3.734375,
     "nodes": 10
   },
   {
@@ -2405,7 +2405,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.8196,
+    "ms": 1.9145,
     "kib": 0,
     "nodes": 4641
   },
@@ -2415,7 +2415,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 28.0905,
+    "ms": 29.9526,
     "kib": 31.24609375,
     "nodes": 4641
   },
@@ -2425,7 +2425,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.8252,
+    "ms": 1.831,
     "kib": 0,
     "nodes": 4641
   },
@@ -2435,7 +2435,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 29.3436,
+    "ms": 27.6976,
     "kib": 31.24609375,
     "nodes": 4641
   },
@@ -2445,7 +2445,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.8222,
+    "ms": 1.8217,
     "kib": 0,
     "nodes": 4641
   },
@@ -2455,7 +2455,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 30.0078,
+    "ms": 27.0951,
     "kib": 31.24609375,
     "nodes": 4641
   },
@@ -2465,7 +2465,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.786,
+    "ms": 1.8323,
     "kib": 0,
     "nodes": 4641
   },
@@ -2475,7 +2475,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 28.3807,
+    "ms": 29.4251,
     "kib": 31.24609375,
     "nodes": 4641
   },
@@ -2485,7 +2485,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.8137,
+    "ms": 1.6098,
     "kib": 0,
     "nodes": 4641
   },
@@ -2495,7 +2495,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 29.1251,
+    "ms": 28.5008,
     "kib": 31.24609375,
     "nodes": 4641
   },
@@ -2505,7 +2505,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2496,
+    "ms": 0.2493,
     "kib": 0,
     "nodes": 21
   },
@@ -2515,7 +2515,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.7761,
+    "ms": 3.7702,
     "kib": 25.44140625,
     "nodes": 21
   },
@@ -2525,7 +2525,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2599,
+    "ms": 0.4916,
     "kib": 0,
     "nodes": 21
   },
@@ -2535,7 +2535,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.7888,
+    "ms": 3.8014,
     "kib": 25.44140625,
     "nodes": 21
   },
@@ -2545,7 +2545,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2674,
+    "ms": 0.3405,
     "kib": 0,
     "nodes": 21
   },
@@ -2555,7 +2555,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.0601,
+    "ms": 3.8516,
     "kib": 25.44140625,
     "nodes": 21
   },
@@ -2565,7 +2565,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2503,
+    "ms": 0.296,
     "kib": 0,
     "nodes": 21
   },
@@ -2575,7 +2575,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.7517,
+    "ms": 4.0268,
     "kib": 25.44140625,
     "nodes": 21
   },
@@ -2585,7 +2585,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.254,
+    "ms": 0.2519,
     "kib": 0,
     "nodes": 21
   },
@@ -2595,7 +2595,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.9613,
+    "ms": 3.8768,
     "kib": 25.44140625,
     "nodes": 21
   },
@@ -2605,9 +2605,9 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3898,
+    "ms": 64.9034,
     "kib": 0,
-    "nodes": 171
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2615,9 +2615,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1377,
-    "kib": 5.4296875,
-    "nodes": 171
+    "ms": 216.1676,
+    "kib": 6.2265625,
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2625,9 +2625,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.4478,
+    "ms": 64.9871,
     "kib": 0,
-    "nodes": 171
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2635,9 +2635,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1399,
-    "kib": 5.4296875,
-    "nodes": 171
+    "ms": 214.3697,
+    "kib": 6.2265625,
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2645,9 +2645,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3865,
+    "ms": 63.0037,
     "kib": 0,
-    "nodes": 171
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2655,9 +2655,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1256,
-    "kib": 5.4296875,
-    "nodes": 171
+    "ms": 206.7376,
+    "kib": 6.2265625,
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2665,9 +2665,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3969,
+    "ms": 62.8441,
     "kib": 0,
-    "nodes": 171
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2675,9 +2675,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1308,
-    "kib": 5.4296875,
-    "nodes": 171
+    "ms": 210.0859,
+    "kib": 6.2265625,
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2685,9 +2685,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.405,
+    "ms": 65.6909,
     "kib": 0,
-    "nodes": 171
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2695,9 +2695,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1358,
-    "kib": 5.4296875,
-    "nodes": 171
+    "ms": 209.3645,
+    "kib": 6.2265625,
+    "nodes": 25223
   },
   {
     "case": "T9-11",
@@ -2705,9 +2705,9 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.348,
+    "ms": 0.8973,
     "kib": 0,
-    "nodes": 39
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2715,9 +2715,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 8.5953,
-    "kib": 14.0703125,
-    "nodes": 39
+    "ms": 2.8302,
+    "kib": 7.62109375,
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2725,9 +2725,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.3537,
+    "ms": 0.826,
     "kib": 0,
-    "nodes": 39
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2735,9 +2735,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 8.7156,
-    "kib": 14.0703125,
-    "nodes": 39
+    "ms": 3.0078,
+    "kib": 7.62109375,
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2745,9 +2745,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.5627,
+    "ms": 0.8888,
     "kib": 0,
-    "nodes": 39
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2755,9 +2755,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 8.7908,
-    "kib": 14.0703125,
-    "nodes": 39
+    "ms": 2.9521,
+    "kib": 7.62109375,
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2765,9 +2765,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.3705,
+    "ms": 0.911,
     "kib": 0,
-    "nodes": 39
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2775,9 +2775,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 9.0574,
-    "kib": 14.0703125,
-    "nodes": 39
+    "ms": 2.9077,
+    "kib": 7.62109375,
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2785,9 +2785,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.7105,
+    "ms": 0.9014,
     "kib": 0,
-    "nodes": 39
+    "nodes": 19
   },
   {
     "case": "T9-11",
@@ -2795,9 +2795,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 9.1061,
-    "kib": 14.0703125,
-    "nodes": 39
+    "ms": 2.9098,
+    "kib": 7.62109375,
+    "nodes": 19
   },
   {
     "case": "A9-29",
@@ -2805,7 +2805,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 3.8852,
+    "ms": 3.8211,
     "kib": 0,
     "nodes": 14850
   },
@@ -2815,7 +2815,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 69.9106,
+    "ms": 66.5652,
     "kib": 34.2890625,
     "nodes": 14850
   },
@@ -2825,7 +2825,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 3.8841,
+    "ms": 3.8588,
     "kib": 0,
     "nodes": 14850
   },
@@ -2835,7 +2835,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 69.4179,
+    "ms": 65.1384,
     "kib": 34.2890625,
     "nodes": 14850
   },
@@ -2845,7 +2845,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 3.8356,
+    "ms": 3.9035,
     "kib": 0,
     "nodes": 14850
   },
@@ -2855,7 +2855,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 66.5126,
+    "ms": 65.7279,
     "kib": 34.2890625,
     "nodes": 14850
   },
@@ -2865,7 +2865,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 3.8278,
+    "ms": 3.8954,
     "kib": 0,
     "nodes": 14850
   },
@@ -2875,7 +2875,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 66.9158,
+    "ms": 66.289,
     "kib": 34.2890625,
     "nodes": 14850
   },
@@ -2885,7 +2885,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 3.8748,
+    "ms": 3.8072,
     "kib": 0,
     "nodes": 14850
   },
@@ -2895,7 +2895,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 67.5236,
+    "ms": 66.3078,
     "kib": 34.2890625,
     "nodes": 14850
   },
@@ -2905,7 +2905,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3506,
+    "ms": 0.3,
     "kib": 0,
     "nodes": 27
   },
@@ -2915,7 +2915,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 5.0215,
+    "ms": 5.0287,
     "kib": 28.234375,
     "nodes": 27
   },
@@ -2925,7 +2925,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3015,
+    "ms": 0.3136,
     "kib": 0,
     "nodes": 27
   },
@@ -2935,7 +2935,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.7474,
+    "ms": 4.4976,
     "kib": 28.234375,
     "nodes": 27
   },
@@ -2945,7 +2945,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3041,
+    "ms": 0.2964,
     "kib": 0,
     "nodes": 27
   },
@@ -2955,7 +2955,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.9937,
+    "ms": 5.0817,
     "kib": 28.234375,
     "nodes": 27
   },
@@ -2965,7 +2965,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3044,
+    "ms": 0.296,
     "kib": 0,
     "nodes": 27
   },
@@ -2975,7 +2975,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 5.0461,
+    "ms": 4.9983,
     "kib": 28.234375,
     "nodes": 27
   },
@@ -2985,7 +2985,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3029,
+    "ms": 0.2997,
     "kib": 0,
     "nodes": 27
   },
@@ -2995,7 +2995,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 5.0036,
+    "ms": 5.0671,
     "kib": 28.234375,
     "nodes": 27
   },
@@ -3005,9 +3005,9 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.398,
+    "ms": 16.7608,
     "kib": 0,
-    "nodes": 169
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3015,9 +3015,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1553,
-    "kib": 5.375,
-    "nodes": 169
+    "ms": 53.8607,
+    "kib": 6.0078125,
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3025,9 +3025,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.3988,
+    "ms": 15.8586,
     "kib": 0,
-    "nodes": 169
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3035,9 +3035,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1343,
-    "kib": 5.375,
-    "nodes": 169
+    "ms": 53.1347,
+    "kib": 6.0078125,
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3045,9 +3045,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.405,
+    "ms": 16.4519,
     "kib": 0,
-    "nodes": 169
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3055,9 +3055,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1291,
-    "kib": 5.375,
-    "nodes": 169
+    "ms": 51.4245,
+    "kib": 6.0078125,
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3065,9 +3065,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.4009,
+    "ms": 17.2936,
     "kib": 0,
-    "nodes": 169
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3075,9 +3075,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.172,
-    "kib": 5.375,
-    "nodes": 169
+    "ms": 53.4915,
+    "kib": 6.0078125,
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3085,9 +3085,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.407,
+    "ms": 17.1027,
     "kib": 0,
-    "nodes": 169
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3095,9 +3095,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 1.1379,
-    "kib": 5.375,
-    "nodes": 169
+    "ms": 50.8225,
+    "kib": 6.0078125,
+    "nodes": 7076
   },
   {
     "case": "T9-29",
@@ -3105,9 +3105,9 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.284,
+    "ms": 0.8324,
     "kib": 0,
-    "nodes": 21
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3115,9 +3115,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.587,
-    "kib": 11.15625,
-    "nodes": 21
+    "ms": 2.6244,
+    "kib": 7.6484375,
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3125,9 +3125,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.2919,
+    "ms": 0.8258,
     "kib": 0,
-    "nodes": 21
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3135,9 +3135,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.6375,
-    "kib": 11.15625,
-    "nodes": 21
+    "ms": 2.64,
+    "kib": 7.6484375,
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3145,9 +3145,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.3606,
+    "ms": 0.826,
     "kib": 0,
-    "nodes": 21
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3155,9 +3155,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.6351,
-    "kib": 11.15625,
-    "nodes": 21
+    "ms": 2.8016,
+    "kib": 7.6484375,
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3165,9 +3165,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.092,
+    "ms": 0.831,
     "kib": 0,
-    "nodes": 21
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3175,9 +3175,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.7216,
-    "kib": 11.15625,
-    "nodes": 21
+    "ms": 2.7893,
+    "kib": 7.6484375,
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3185,9 +3185,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.2923,
+    "ms": 0.8362,
     "kib": 0,
-    "nodes": 21
+    "nodes": 17
   },
   {
     "case": "T9-29",
@@ -3195,9 +3195,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.6106,
-    "kib": 11.15625,
-    "nodes": 21
+    "ms": 2.6553,
+    "kib": 7.6484375,
+    "nodes": 17
   },
   {
     "case": "A9-47",
@@ -3205,7 +3205,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 31.6195,
+    "ms": 27.5496,
     "kib": 0,
     "nodes": 89351
   },
@@ -3215,7 +3215,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 512.0817,
+    "ms": 502.4001,
     "kib": 35.63671875,
     "nodes": 89351
   },
@@ -3225,7 +3225,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 29.0168,
+    "ms": 28.1092,
     "kib": 0,
     "nodes": 89351
   },
@@ -3235,7 +3235,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 515.111,
+    "ms": 498.531,
     "kib": 35.63671875,
     "nodes": 89351
   },
@@ -3245,7 +3245,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 27.9267,
+    "ms": 27.1374,
     "kib": 0,
     "nodes": 89351
   },
@@ -3255,7 +3255,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 499.5358,
+    "ms": 508.6829,
     "kib": 35.63671875,
     "nodes": 89351
   },
@@ -3265,7 +3265,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 26.8231,
+    "ms": 29.0898,
     "kib": 0,
     "nodes": 89351
   },
@@ -3275,7 +3275,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 504.8099,
+    "ms": 492.5228,
     "kib": 35.63671875,
     "nodes": 89351
   },
@@ -3285,7 +3285,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 27.4421,
+    "ms": 28.1272,
     "kib": 0,
     "nodes": 89351
   },
@@ -3295,7 +3295,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 516.2819,
+    "ms": 505.7018,
     "kib": 35.63671875,
     "nodes": 89351
   },
@@ -3305,7 +3305,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.9876,
+    "ms": 1.9665,
     "kib": 0,
     "nodes": 169
   },
@@ -3315,7 +3315,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 29.8708,
+    "ms": 30.4318,
     "kib": 81.86328125,
     "nodes": 169
   },
@@ -3325,7 +3325,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.1192,
+    "ms": 1.984,
     "kib": 0,
     "nodes": 169
   },
@@ -3335,7 +3335,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 29.8445,
+    "ms": 31.8567,
     "kib": 81.86328125,
     "nodes": 169
   },
@@ -3345,7 +3345,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.9611,
+    "ms": 1.9824,
     "kib": 0,
     "nodes": 169
   },
@@ -3355,7 +3355,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 30.4079,
+    "ms": 29.3659,
     "kib": 81.86328125,
     "nodes": 169
   },
@@ -3365,7 +3365,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 2.0636,
+    "ms": 1.9729,
     "kib": 0,
     "nodes": 169
   },
@@ -3375,7 +3375,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 31.7513,
+    "ms": 32.0215,
     "kib": 81.86328125,
     "nodes": 169
   },
@@ -3385,7 +3385,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.9655,
+    "ms": 2.1073,
     "kib": 0,
     "nodes": 169
   },
@@ -3395,7 +3395,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 32.396,
+    "ms": 30.4174,
     "kib": 81.86328125,
     "nodes": 169
   },
@@ -3405,9 +3405,9 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2124,
+    "ms": 13.8352,
     "kib": 0,
-    "nodes": 80
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3415,9 +3415,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.606,
-    "kib": 5.3203125,
-    "nodes": 80
+    "ms": 43.2233,
+    "kib": 6.0859375,
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3425,9 +3425,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2156,
+    "ms": 13.1033,
     "kib": 0,
-    "nodes": 80
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3435,9 +3435,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.5953,
-    "kib": 5.3203125,
-    "nodes": 80
+    "ms": 42.8628,
+    "kib": 6.0859375,
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3445,9 +3445,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.1971,
+    "ms": 13.6455,
     "kib": 0,
-    "nodes": 80
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3455,9 +3455,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.5939,
-    "kib": 5.3203125,
-    "nodes": 80
+    "ms": 43.4477,
+    "kib": 6.0859375,
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3465,9 +3465,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2147,
+    "ms": 13.6101,
     "kib": 0,
-    "nodes": 80
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3475,9 +3475,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.595,
-    "kib": 5.3203125,
-    "nodes": 80
+    "ms": 40.0444,
+    "kib": 6.0859375,
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3485,9 +3485,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 0.2101,
+    "ms": 13.5694,
     "kib": 0,
-    "nodes": 80
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3495,9 +3495,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 0.6087,
-    "kib": 5.3203125,
-    "nodes": 80
+    "ms": 41.5727,
+    "kib": 6.0859375,
+    "nodes": 5111
   },
   {
     "case": "T9-47",
@@ -3505,9 +3505,9 @@
     "repetition": 1,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.1165,
+    "ms": 1.559,
     "kib": 0,
-    "nodes": 18
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3515,9 +3515,9 @@
     "repetition": 1,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.0091,
-    "kib": 13.5546875,
-    "nodes": 18
+    "ms": 5.2587,
+    "kib": 8.015625,
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3525,9 +3525,9 @@
     "repetition": 2,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.1097,
+    "ms": 1.7454,
     "kib": 0,
-    "nodes": 18
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3535,9 +3535,9 @@
     "repetition": 2,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.9341,
-    "kib": 13.5546875,
-    "nodes": 18
+    "ms": 5.1882,
+    "kib": 8.015625,
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3545,9 +3545,9 @@
     "repetition": 3,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.0945,
+    "ms": 1.6114,
     "kib": 0,
-    "nodes": 18
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3555,9 +3555,9 @@
     "repetition": 3,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.9392,
-    "kib": 13.5546875,
-    "nodes": 18
+    "ms": 5.2375,
+    "kib": 8.015625,
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3565,9 +3565,9 @@
     "repetition": 4,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.1114,
+    "ms": 1.4718,
     "kib": 0,
-    "nodes": 18
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3575,9 +3575,9 @@
     "repetition": 4,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 3.9292,
-    "kib": 13.5546875,
-    "nodes": 18
+    "ms": 5.3509,
+    "kib": 8.015625,
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3585,9 +3585,9 @@
     "repetition": 5,
     "mode": "time",
     "status": "SOLVED",
-    "ms": 1.3111,
+    "ms": 1.6339,
     "kib": 0,
-    "nodes": 18
+    "nodes": 28
   },
   {
     "case": "T9-47",
@@ -3595,9 +3595,9 @@
     "repetition": 5,
     "mode": "memory",
     "status": "SOLVED",
-    "ms": 4.0362,
-    "kib": 13.5546875,
-    "nodes": 18
+    "ms": 5.1227,
+    "kib": 8.015625,
+    "nodes": 28
   },
   {
     "case": "A-unsat",
@@ -3615,7 +3615,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.0211,
+    "ms": 0.0209,
     "kib": 1.171875,
     "nodes": 2
   },
@@ -3625,7 +3625,7 @@
     "repetition": 2,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0083,
+    "ms": 0.0099,
     "kib": 0,
     "nodes": 2
   },
@@ -3635,7 +3635,7 @@
     "repetition": 2,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.0214,
+    "ms": 0.0213,
     "kib": 1.171875,
     "nodes": 2
   },
@@ -3645,7 +3645,7 @@
     "repetition": 3,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0085,
+    "ms": 0.0095,
     "kib": 0,
     "nodes": 2
   },
@@ -3655,7 +3655,7 @@
     "repetition": 3,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.023,
+    "ms": 0.0232,
     "kib": 1.171875,
     "nodes": 2
   },
@@ -3665,7 +3665,7 @@
     "repetition": 4,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0089,
+    "ms": 0.009,
     "kib": 0,
     "nodes": 2
   },
@@ -3675,7 +3675,7 @@
     "repetition": 4,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.0216,
+    "ms": 0.0233,
     "kib": 1.171875,
     "nodes": 2
   },
@@ -3685,7 +3685,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0093,
+    "ms": 0.009,
     "kib": 0,
     "nodes": 2
   },
@@ -3695,7 +3695,7 @@
     "repetition": 5,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.0264,
+    "ms": 0.0227,
     "kib": 1.171875,
     "nodes": 2
   },
@@ -3705,7 +3705,7 @@
     "repetition": 1,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0114,
+    "ms": 0.0118,
     "kib": 0,
     "nodes": 1
   },
@@ -3715,7 +3715,7 @@
     "repetition": 1,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.0288,
+    "ms": 0.0293,
     "kib": 1.296875,
     "nodes": 1
   },
@@ -3725,248 +3725,248 @@
     "repetition": 2,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0127,
+    "ms": 0.0125,
     "kib": 0,
     "nodes": 1
   },
   {
     "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0272,
-    "kib": 1.296875,
-    "nodes": 1
-  },
-  {
-    "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0123,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0279,
-    "kib": 1.296875,
-    "nodes": 1
-  },
-  {
-    "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0141,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0265,
-    "kib": 1.296875,
-    "nodes": 1
-  },
-  {
-    "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0117,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "A-unsat",
-    "algorithm": "A*",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0535,
-    "kib": 1.296875,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0086,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0164,
-    "kib": 0.8125,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0096,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 2,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0163,
-    "kib": 0.8125,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0083,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0264,
-    "kib": 0.8125,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0091,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 4,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0153,
-    "kib": 0.8125,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0094,
-    "kib": 0,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "DFS",
-    "repetition": 5,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0177,
-    "kib": 0.8125,
-    "nodes": 1
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0127,
-    "kib": 0,
-    "nodes": 0
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "A*",
-    "repetition": 1,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0277,
-    "kib": 1.09375,
-    "nodes": 0
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "A*",
-    "repetition": 2,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0117,
-    "kib": 0,
-    "nodes": 0
-  },
-  {
-    "case": "T-unsat",
     "algorithm": "A*",
     "repetition": 2,
     "mode": "memory",
     "status": "UNSAT",
     "ms": 0.0278,
-    "kib": 1.09375,
-    "nodes": 0
+    "kib": 1.296875,
+    "nodes": 1
   },
   {
-    "case": "T-unsat",
+    "case": "A-unsat",
     "algorithm": "A*",
     "repetition": 3,
-    "mode": "time",
-    "status": "UNSAT",
-    "ms": 0.0119,
-    "kib": 0,
-    "nodes": 0
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "A*",
-    "repetition": 3,
-    "mode": "memory",
-    "status": "UNSAT",
-    "ms": 0.0289,
-    "kib": 1.09375,
-    "nodes": 0
-  },
-  {
-    "case": "T-unsat",
-    "algorithm": "A*",
-    "repetition": 4,
     "mode": "time",
     "status": "UNSAT",
     "ms": 0.0123,
     "kib": 0,
+    "nodes": 1
+  },
+  {
+    "case": "A-unsat",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0281,
+    "kib": 1.296875,
+    "nodes": 1
+  },
+  {
+    "case": "A-unsat",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0121,
+    "kib": 0,
+    "nodes": 1
+  },
+  {
+    "case": "A-unsat",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0291,
+    "kib": 1.296875,
+    "nodes": 1
+  },
+  {
+    "case": "A-unsat",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0112,
+    "kib": 0,
+    "nodes": 1
+  },
+  {
+    "case": "A-unsat",
+    "algorithm": "A*",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0261,
+    "kib": 1.296875,
+    "nodes": 1
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0165,
+    "kib": 0,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0271,
+    "kib": 0.890625,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0162,
+    "kib": 0,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0268,
+    "kib": 0.890625,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0173,
+    "kib": 0,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0285,
+    "kib": 0.890625,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0347,
+    "kib": 0,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 4,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0299,
+    "kib": 0.890625,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0165,
+    "kib": 0,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "DFS",
+    "repetition": 5,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0289,
+    "kib": 0.890625,
+    "nodes": 3
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.014,
+    "kib": 0,
+    "nodes": 0
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 1,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0348,
+    "kib": 1.2578125,
+    "nodes": 0
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0158,
+    "kib": 0,
+    "nodes": 0
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 2,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0354,
+    "kib": 1.2578125,
+    "nodes": 0
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0156,
+    "kib": 0,
+    "nodes": 0
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 3,
+    "mode": "memory",
+    "status": "UNSAT",
+    "ms": 0.0357,
+    "kib": 1.2578125,
+    "nodes": 0
+  },
+  {
+    "case": "T-unsat",
+    "algorithm": "A*",
+    "repetition": 4,
+    "mode": "time",
+    "status": "UNSAT",
+    "ms": 0.0142,
+    "kib": 0,
     "nodes": 0
   },
   {
@@ -3975,8 +3975,8 @@
     "repetition": 4,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.0268,
-    "kib": 1.09375,
+    "ms": 0.0373,
+    "kib": 1.2578125,
     "nodes": 0
   },
   {
@@ -3985,7 +3985,7 @@
     "repetition": 5,
     "mode": "time",
     "status": "UNSAT",
-    "ms": 0.0136,
+    "ms": 0.0144,
     "kib": 0,
     "nodes": 0
   },
@@ -3995,8 +3995,8 @@
     "repetition": 5,
     "mode": "memory",
     "status": "UNSAT",
-    "ms": 0.028,
-    "kib": 1.09375,
+    "ms": 0.036,
+    "kib": 1.2578125,
     "nodes": 0
   }
 ]
