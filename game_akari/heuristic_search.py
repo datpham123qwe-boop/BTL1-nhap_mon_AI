@@ -1,6 +1,6 @@
 import heapq
 from typing import Optional, Tuple, List, Set
-import logic as lg
+from game_akari import logic as lg
 
 
 def get_next_candidates(problem: lg.AkariProblem, lit_mask: int, rem_clues: Tuple[int, ...]) -> List[int]:
@@ -62,7 +62,7 @@ def compute_f_score(problem: lg.AkariProblem, bulbs_mask: int, lit_mask: int, re
 
     return (g_cost + h_cost, unlit_cnt)
 
-def solve_astar(problem: lg.AkariProblem) -> Tuple[Optional[int], int]:
+def solve_astar(problem: lg.AkariProblem, on_step=None) -> Tuple[Optional[int], int]:
     """
     Mỗi bước chọn 1 node có f min nhất và đặt 1 bóng đèn hợp lệ.
     Trả về: (bulbs_mask_solution, nodes_explored)
@@ -76,6 +76,8 @@ def solve_astar(problem: lg.AkariProblem) -> Tuple[Optional[int], int]:
     while open_set: # Duyệt đến khi hết Heap
         f_score, unlit_cnt, bulbs_mask, lit_mask, rem_clues = heapq.heappop(open_set)   # pop node có f min
         nodes_explored += 1
+        if on_step is not None:
+            on_step(bulbs_mask, nodes_explored)
 
         if unlit_cnt == 0 and all(c == 0 for c in rem_clues):   # Ktra trạng thái đích
             return bulbs_mask, nodes_explored

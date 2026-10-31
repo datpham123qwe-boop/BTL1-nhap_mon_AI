@@ -1,0 +1,13 @@
+Trong chín bàn có nghiệm, A* nhanh hơn DFS ở cả sáu bàn thuộc
+các kích thước $7\times7$ và $9\times9$, còn DFS nhanh hơn ở cả
+ba bàn $5\times5$. Tại T9-11, thời gian trung vị giảm từ
+64.9034 ms xuống 0.8973 ms, tương ứng khoảng 72.33 lần; số nút
+giảm từ 25\,223 xuống 19. A* sử dụng đỉnh cấp phát Python cao hơn
+DFS trên cả chín bàn có nghiệm, dù hàng đợi đã dùng bitmask.
+Hai giải thuật đều xác định đúng trường hợp T-unsat.
+
+Chênh lệch trên phản ánh toàn bộ hai hiện thực: A* dùng kiểm tra
+sớm giới hạn hàng/cột, forward checking, bitmask và quy tắc phá
+hòa, trong khi DFS không cắt tỉa sớm theo giới hạn hàng/cột.
+Không thể quy toàn bộ mức tăng tốc cho riêng heuristic hay
+bitmask khi chưa có thí nghiệm đối chứng từng thành phần.

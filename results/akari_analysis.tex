@@ -1,0 +1,9 @@
+Trong chín bàn có nghiệm, A* nhanh hơn DFS ở cả sáu bàn thuộc
+các kích thước $7\times7$ và $9\times9$, còn DFS nhanh hơn ở cả
+ba bàn $5\times5$. Tại A9-47, số nút giảm từ 89\,351 xuống 169;
+thời gian trung vị giảm từ 28.1092 ms xuống 1.9824 ms, tương ứng
+nhanh hơn khoảng 14.18 lần. Tuy nhiên, đỉnh cấp phát Python của
+A* trên bàn này là 81.86 KiB, cao hơn 35.64 KiB của DFS.
+Kết quả cho thấy giảm số nút không đồng nghĩa luôn giảm bộ nhớ.
+Hai giải thuật đều xác định đúng trường hợp A-unsat. Các nhận
+xét chỉ áp dụng cho bộ dữ liệu và cấu hình thực nghiệm này.
